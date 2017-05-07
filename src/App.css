@@ -164,3 +164,10 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+ul.social-links li.list-inline-item {
+  margin-right: 1em;
+}
+ul.social-links li.list-inline-item:last-child {
+  margin-right: 0;
+}
