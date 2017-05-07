@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 
+import { HashRouter, Link } from 'react-router-dom'
+
 class Navbar extends Component {
   render() {
     return (
-      <div className="blog-masthead">
-        <div className="container">
-          <nav className="nav blog-nav">
-            <a className="nav-link active" href="/">Home</a>
-            <a className="nav-link" href="#">Side Projects</a>
-            <a className="nav-link" href="http://firstexitmedia.com" target="_blank">First Exit Media</a>
-            <a className="nav-link" href="/blog">Blog</a>
-            <a className="nav-link" href="#">Contact</a>
-          </nav>
+      <HashRouter>
+        <div className="blog-masthead">
+          <div className="container">
+            <nav className="nav blog-nav">
+              <Link className="nav-link active" to="/">Home</Link>
+              <Link className="nav-link" to="/blog">Blog</Link>
+              <a className="nav-link" href="http://firstexitmedia.com" target="_blank">First Exit Media</a>
+            </nav>
+          </div>
         </div>
-      </div>
+      </HashRouter>
     );
   }
 }
