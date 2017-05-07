@@ -9,7 +9,7 @@ class Home extends Component {
             <div className="blog-header">
               <div className="container">
                 <h1 className="blog-title">Zach Levy</h1>
-                <p className="lead blog-description">Entrepreneur and Developer</p>
+                <p className="lead blog-description">Entrepreneur and Developer in Toronto, Canada</p>
               </div>
             </div>
           </div>
