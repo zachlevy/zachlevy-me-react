@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-import BlogBookPublishing from './Blog/BookPublishing'
+import Blog from './Blog'
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
             <p className="lead blog-description">An example blog template built with Bootstrap.</p>
           </div>
         </div>
-        <BlogBookPublishing />
+        <Blog />
         <Footer />
       </div>
     );
