@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { HashRouter, Route } from 'react-router-dom'
+
 import './App.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 import Blog from './Blog'
+import Home from './Home'
 
 class App extends Component {
   render() {
@@ -16,7 +19,12 @@ class App extends Component {
             <p className="lead blog-description">An example blog template built with Bootstrap.</p>
           </div>
         </div>
-        <Blog />
+        <HashRouter basename="/">
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route path="/blog" component={Blog} />
+          </div>
+        </HashRouter>
         <Footer />
       </div>
     );
