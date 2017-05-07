@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Navbar'
 
+import BlogBookPublishing from './Blog/BookPublishing'
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class App extends Component {
             <p className="lead blog-description">An example blog template built with Bootstrap.</p>
           </div>
         </div>
+        <BlogBookPublishing />
       </div>
     );
   }
