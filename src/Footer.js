@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-import { currentYear } from './helpers/dates'
+import { currentYear, timestampToDateString } from './helpers/dates'
 
 class Navbar extends Component {
   render() {
     return (
       <footer className="blog-footer">
         <div className="container">
-          <p><a href="https://github.com/zachlevy/zachlevy-me-react" target="_blank">Built</a> by Zach Levy, obviously. Copyright {currentYear}</p>
+          <p><a href="https://github.com/zachlevy/zachlevy-me-react" target="_blank">Built</a> by Zach Levy, obviously &copy; {currentYear}</p>
+          <p>Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}</p>
           <div className="row text-center">
             <div className="col-12">
               <ul className="list-inline social-links">

@@ -12,11 +12,11 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "REACT_APP_GA_ID=UA-97008262-2 react-scripts start",
+    "start": "REACT_APP_GA_ID=UA-97008262-2 REACT_APP_TIMESTAMP=\"$(date +%s)\" react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "REACT_APP_GA_ID=UA-97008262-1 npm run build && aws s3 sync build/ s3://www.zachlevy.me",
+    "deploy": "REACT_APP_GA_ID=UA-97008262-1 REACT_APP_TIMESTAMP=\"$(date +%s)\" npm run build && aws s3 sync build/ s3://www.zachlevy.me",
     "open": "open http://www.zachlevy.me"
   }
 }
