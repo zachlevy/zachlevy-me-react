@@ -64,6 +64,8 @@ class BookPublishing extends Component {
           <li>Didn't print my name anywhere in the book, you can find it through ISBN though.</li>
           <li>Sales goal. I have yet to commit to a sales goal for the book, I was more entirely focused on its creation.</li>
         </ul>
+        <h4>Check Out The Book On Amazon</h4>
+        <p>In case you have your ad blocker on and can't see the link, here's the direct link to the book <a href="http://a.co/jjzqlpf" target="_blank">on Amazon!</a></p>
       </div>
     )
   }
