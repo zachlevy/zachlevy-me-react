@@ -5,7 +5,7 @@ import BookPublishingPost from './BookPublishing'
 import ExamplePost from './Example'
 
 
-class Navbar extends Component {
+class Blog extends Component {
   render() {
     return (
       <div className="container">
@@ -34,4 +34,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default Blog

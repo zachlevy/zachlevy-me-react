@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Navbar extends Component {
+class Sidebar extends Component {
   render() {
     return (
       <div className="col-sm-3 offset-sm-1 blog-sidebar">
@@ -38,4 +38,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default Sidebar
