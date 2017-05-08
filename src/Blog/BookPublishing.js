@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 
+import StatsBlock from './Statistics/Block'
+
 class BookPublishing extends Component {
   render() {
     return (
       <div className="blog-post">
-        <h2 className="blog-post-title">I wrote a book with code</h2>
+        <h2 className="blog-post-title">I Wrote A Paperback Book With Code</h2>
         <p className="blog-post-meta">May 7, 2017 by Zach Levy</p>
+        <div className="row">
+          <div className="col-6 col-sm-4">
+            <StatsBlock statistic="30" description="Hours" />
+          </div>
+          <div className="col-6 col-sm-4">
+            <StatsBlock statistic="$0" description="Spent" />
+          </div>
+          <div className="col-6 col-sm-4">
+            <StatsBlock statistic="132" description="Book Pages" />
+          </div>
+        </div>
         <h4>Stop putting authors on pedestals</h4>
-        <p>This book was written with a thesis, It's not that hard to write a book. We should stop putting authors on pedestals just because they have published a book - they should have to earn.</p>
+        <p>This book was written with a thesis, It's not that hard to write a book. We should stop putting authors on pedestals just because they have published a book - they should have to earn it.</p>
         <h4>Self-Imposing ridiculous constraints</h4>
         <p>As always we have two constraints, time and money which often interchangeable. Because this is a side project I have a severe lack of both. I decided my constraints were to write and publish a book in 20 hours or less, spending no more than $50.</p>
         <h4>Skip or automate as much as possible</h4>
