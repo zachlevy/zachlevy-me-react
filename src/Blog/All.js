@@ -12,11 +12,12 @@ const blogTeasers = [
   )
 ]
 
-class Sidebar extends Component {
+class All extends Component {
   render() {
     return (
       <div>
-        <h1>Blog Index</h1>
+        <h1>All Blog Posts</h1>
+        <br />
         {
           blogTeasers.map((content, index) => {
             return (
@@ -33,4 +34,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar
+export default All

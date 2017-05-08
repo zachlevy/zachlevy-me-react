@@ -14,7 +14,7 @@ class Home extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2>Priorities</h2>
+              <h2>What am I up to?</h2>
               <br />
             </div>
           </div>
