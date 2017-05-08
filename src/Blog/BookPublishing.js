@@ -4,17 +4,34 @@ class BookPublishing extends Component {
   render() {
     return (
       <div className="blog-post">
-        <h2 className="blog-post-title">New feature</h2>
-        <p className="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h2 className="blog-post-title">I wrote a book with code</h2>
+        <p className="blog-post-meta">May 7, 2017 by Zach Levy</p>
+        <h4>Stop putting authors on pedestals</h4>
+        <p>This book was written with a thesis, It's not that hard to write a book. We should stop putting authors on pedestals just because they have published a book - they should have to earn.</p>
+        <h4>Self-Imposing ridiculous constraints</h4>
+        <p>As always we have two constraints, time and money which often interchangeable. Because this is a side project I have a severe lack of both. I decided my constraints were to write and publish a book in 20 hours or less, spending no more than $50.</p>
+        <h4>Skip or automate as much as possible</h4>
+        <p>With what seems like an impossibly large task, you must break it down into smaller problems. Then, my next and favorite step is to remove everything in the way so you can to reach the final goal. This approach works very well with building software prototypes, which I have built many, so I decided to apply it to the book. Automation is a life saver, being a software developer helps a lot.</p>
+        <h4>Deconstructing an author</h4>
+        <p>I broke down authoring in smaller tasks, activities an author would need to do to sell a book. Then I tried to skip or automate everything:</p>
         <ul>
-          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-          <li>Donec id elit non mi porta gravida at eget metus.</li>
-          <li>Nulla vitae elit libero, a pharetra augue.</li>
+          <li><strong>Inspiration/ideation</strong> I would need to think of an initial topic, but I could automate collection or formatting the data to write about.</li>
+          <li><strong>Writing</strong> I could automate some of this, but I needed to produce something original to have the copyrights, which likely meant a human touch.</li>
+          <li><strong>Reviewing</strong> I would skip - A spell checker is good enough.</li>
+          <li><strong>Publishing/Printing</strong> I would automate with Amazon, I hear they're good with books.</li>
+          <li><strong>Distributing</strong> only on e-commerce. I don't have money to invest in printing thousands of books and I don't want to spend time pitching for investment.</li>
+          <li></li>
         </ul>
-        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+
+        <h4></h4>
+        <p></p>
+        <h4></h4>
+        <p></p>
+        <h4></h4>
+        <p></p>
+        <h4></h4>
+        <p></p>
       </div>
     )
   }
