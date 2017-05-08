@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
 import Sidebar from './Sidebar'
+
+import BookPublishing from './BookPublishing'
+import Example from './Example'
 
 const blogTeasers = [
   (
@@ -14,26 +18,22 @@ const blogTeasers = [
 
 class Blog extends Component {
   content() {
-    if (this.props.children) {
-      return this.props.children
-    } else {
-      return (
-        <div>
-          <h1>Blog Index</h1>
-          {
-            blogTeasers.map((content, index) => {
-              return (
-                <div className="row" key={index}>
-                  <div className="col-12">
-                    {content}
-                  </div>
+    return (
+      <div>
+        <h1>Blog Index</h1>
+        {
+          blogTeasers.map((content, index) => {
+            return (
+              <div className="row" key={index}>
+                <div className="col-12">
+                  {content}
                 </div>
-              )
-            })
-          }
-        </div>
-      )
-    }
+              </div>
+            )
+          })
+        }
+      </div>
+    )
   }
 
   render() {
@@ -41,7 +41,8 @@ class Blog extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-8">
-            {this.content()}
+            <Route path="/blog/i-wrote-a-paperback-book-with-code" component={BookPublishing} />
+            <Route path="/blog/example" component={Example} />
           </div>
           <Sidebar />
         </div>

@@ -8,7 +8,6 @@ import Footer from './Footer'
 import Blog from './Blog'
 import Home from './Home'
 import Contact from './Contact'
-import BookPublishing from './Blog/BookPublishing'
 
 class App extends Component {
   render() {
@@ -18,10 +17,7 @@ class App extends Component {
         <HashRouter basename="/">
           <div>
             <Route exact path="/" component={Home} />
-            <Route exact path="/blog" component={Blog} />
-            <Blog>
-              <Route path="/blog/i-wrote-a-paperback-book-with-code" component={BookPublishing} />
-            </Blog>
+            <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </div>
         </HashRouter>
