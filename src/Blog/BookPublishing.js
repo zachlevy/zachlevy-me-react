@@ -42,20 +42,28 @@ class BookPublishing extends Component {
         <p>Ideally I would have just taken the top Life Pro Tips from Reddit, downloaded it as PDF and uploaded it to Amazon, however, there was one glaring issue: Copyright. According to Reddit's Terms of Use, the poster of the content owns the copyright to their post, and gives Reddit the opportunity to distribute it. This is reasonable, however I don't have time to ask every user for use and I don't want to infringe on anyone's copyright, so I couldn't use the actual posts, I would have to actually write my own.</p>
         <h4>When cleverness fails, Grind</h4>
         <p>My initial thought was to use a paraphrasing API to consume the posts and return an original work. Unfortunately the posts were mangled and some didn't have the opportunity to use synonyms etc. so I took the hard path. I grinded out reading each post, choosing my favorites and making sure to put them in my own words. This part of the project took longer than expected but at least I would avoid any copyright issues.</p>
-        <h4>Publishing</h4>
-        <p>Initially I was going to use CreateSpace to publish my book, however, it turned out to be more work than Kindle Direct Publishing. Both use Amazon for distribution however, KDP was easier to use. The biggest downside is that KDP doesn't allow for purchase from Amazon.ca.</p>
-        <p>In terms of paperwork and taxes, I decided to use my person instead of my freelancing company for convenience even though I'll pay more in taxes.</p>
-        <p>Uploading was very simple, KDP has a clear specification on their website for cover artwork and formatting. I tried using HTML/CSS for my formating but ended up using Google Docs for flexibility and exporting to PDF. My inspiration for the cover was from Cards Against Humanity, a simple modern theme which I applied throughout the book.</p>
+          <h4>Publishing</h4>
+          <p>Initially I was going to use CreateSpace to publish my book, however, it turned out to be more work than Kindle Direct Publishing. Both use Amazon for distribution however, KDP was easier to use. The biggest downside is that KDP doesn't allow for purchase from Amazon.ca.</p>
+          <p>In terms of paperwork and taxes, I decided to use my person instead of my freelancing company for convenience even though I'll pay more in taxes.</p>
+        <div className="row">
+          <div className="col-12 col-sm-8">
+            <p>Uploading was very simple, KDP has a clear specification on their website for cover artwork and formatting. I tried using HTML/CSS for my formating but ended up using Google Docs for flexibility and exporting to PDF. My inspiration for the cover was from Cards Against Humanity, a simple modern theme which I applied throughout the book.</p>
+          </div>
+          <div className="col-12 col-sm-4">
+            <div className="row">
+              <div className="col-12">
+                <iframe style={{width:"120px", height:"240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=zachlevy-20&marketplace=amazon&region=US&placement=152024729X&asins=152024729X&linkId=2fe0f589b2d21fd4bed9971cd6d10c97&show_border=false&link_opens_in_new_window=true&price_color=999999&title_color=0066c0&bg_color=ffffff">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
         <h4>Regrets</h4>
         <ul>
           <li>Didn't take the extra time to publish through CreateSpace to be able to distribute through Amazon.ca. Most of my network is in Canada so this would have been useful.</li>
           <li>Didn't print my name anywhere in the book, you can find it through ISBN though.</li>
           <li>Sales goal. I have yet to commit to a sales goal for the book, I was more entirely focused on its creation.</li>
         </ul>
-        <p>Time spent ~30 hours</p>
-        <p>Money spent $0</p>
-        <p>Book Pages 132</p>
-        <a href="https://www.amazon.com/Life-Pro-Tips-addendum-life/dp/152024729X/ref=zachlevy-me-blog" target="_blank">Life Pro Tips: An Addendum To Life</a>
       </div>
     )
   }
