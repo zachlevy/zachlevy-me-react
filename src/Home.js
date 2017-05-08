@@ -3,19 +3,22 @@ import React, { Component } from 'react';
 import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
 import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
 import zachLevyEntrepreneur from './images/zach_levy_entrepreneur_1024x512.png'
+import zachLevySailing from './images/zach_levy_sailing_512x512.png'
 
 class Home extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-12">
-            <div className="blog-header">
-              <h1 className="blog-title">Zach Levy</h1>
-              <p className="lead blog-description">Entrepreneur and Developer in Toronto, Canada</p>
-            </div>
+          <div className="col-12 col-sm-2">
+            <img src={zachLevySailing} className="img-fluid rounded-circle" alt="Zach Levy Sailing" />
+          </div>
+          <div className="col-12 col-sm-10">
+            <h1>Zach Levy</h1>
+            <p>Entrepreneur and Developer in Toronto, Canada</p>
           </div>
         </div>
+        <hr />
         <div className="row">
           <div className="col-12">
             <h2>Priorities</h2>
