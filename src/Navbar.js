@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { HashRouter, Link } from 'react-router-dom'
+import { HashRouter, NavLink } from 'react-router-dom'
 
 class Navbar extends Component {
   render() {
@@ -9,9 +9,9 @@ class Navbar extends Component {
         <div className="blog-masthead">
           <div className="container">
             <nav className="nav blog-nav">
-              <Link className="nav-link active" to="/">Home</Link>
-              <Link className="nav-link" to="/blog">Blog</Link>
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <NavLink className="nav-link" exact to="/">Home</NavLink>
+              <NavLink className="nav-link" to="/blog">Blog</NavLink>
+              <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </nav>
           </div>
         </div>

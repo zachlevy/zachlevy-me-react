@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
 
@@ -20,7 +20,7 @@ class Sidebar extends Component {
           <div className="col-12">
             <h4>Recommended</h4>
             <ul className="">
-              <li><Link to="/blog/i-wrote-a-paperback-book-with-code">I Wrote A Paperback Book With Code</Link></li>
+              <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code">I Wrote A Paperback Book With Code</NavLink></li>
             </ul>
           </div>
         </div>
