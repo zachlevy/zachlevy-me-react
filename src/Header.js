@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import zachLevySailing from './images/zach_levy_sailing_512x512.png'
 
@@ -17,8 +17,8 @@ class Header extends Component {
         </div>
         <hr />
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

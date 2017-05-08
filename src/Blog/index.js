@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import Sidebar from './Sidebar'
 import BookPublishingPost from './BookPublishing'
@@ -30,8 +30,8 @@ class Navbar extends Component {
 
       </div>
 
-    );
+    )
   }
 }
 
-export default Navbar;
+export default Navbar

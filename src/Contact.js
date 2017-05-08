@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import Header from './Header'
 
@@ -16,8 +16,8 @@ class Contact extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Contact;
+export default Contact

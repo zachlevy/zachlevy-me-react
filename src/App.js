@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 
-import './App.css';
+import './App.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -23,8 +23,8 @@ class App extends Component {
         </HashRouter>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

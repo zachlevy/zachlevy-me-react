@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import { HashRouter, Link } from 'react-router-dom'
 
@@ -16,8 +16,8 @@ class Navbar extends Component {
           </div>
         </div>
       </HashRouter>
-    );
+    )
   }
 }
 
-export default Navbar;
+export default Navbar

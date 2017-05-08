@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import { currentYear, timestampToDateString } from './helpers/dates'
 
@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <footer className="blog-footer">
         <div className="container">
-          <p><a href="https://github.com/zachlevy/zachlevy-me-react" target="_blank">Built</a> by Zach Levy, obviously &copy; {currentYear}</p>
+          <p><a href="https://github.com/zachlevy/zachlevy-me-react" target="_blank">Built</a> by Zach Levy, obviously. &copy; {currentYear}</p>
           <p>Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}</p>
           <div className="row text-center">
             <div className="col-12">
@@ -22,8 +22,8 @@ class Footer extends Component {
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

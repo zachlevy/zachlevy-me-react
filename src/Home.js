@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import Header from './Header'
 
@@ -83,8 +83,8 @@ class Home extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
