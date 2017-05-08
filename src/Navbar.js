@@ -11,7 +11,7 @@ class Navbar extends Component {
             <nav className="nav blog-nav">
               <Link className="nav-link active" to="/">Home</Link>
               <Link className="nav-link" to="/blog">Blog</Link>
-              <a className="nav-link" href="http://firstexitmedia.com" target="_blank">First Exit Media</a>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </nav>
           </div>
         </div>

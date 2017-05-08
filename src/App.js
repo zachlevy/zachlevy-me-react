@@ -7,6 +7,7 @@ import Footer from './Footer'
 
 import Blog from './Blog'
 import Home from './Home'
+import Contact from './Contact'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Home} />
             <Route path="/blog" component={Blog} />
+            <Route path="/contact" component={Contact} />
           </div>
         </HashRouter>
         <Footer />

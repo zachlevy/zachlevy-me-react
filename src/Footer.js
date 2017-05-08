@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { currentYear, timestampToDateString } from './helpers/dates'
 
-class Navbar extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer className="blog-footer">
@@ -26,4 +26,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Footer;
