@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { HashRouter, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import { Helmet } from "react-helmet"
 
 import Sidebar from './Sidebar'
 
@@ -13,6 +13,10 @@ class Blog extends Component {
   render() {
     return (
       <div className="container">
+        <Helmet>
+          <title>Zach Levy's Blog</title>
+          <meta name="description" content="Side Projects, Side Hustles, and Opinionated Insights" />
+        </Helmet>
         <div className="row">
           <div className="col-sm-8">
             <Route exact path="/blog" component={All} />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Helmet } from "react-helmet"
 
 import StatsBlock from './Statistics/Block'
 
@@ -6,6 +7,10 @@ class BookPublishing extends Component {
   render() {
     return (
       <div className="blog-post">
+        <Helmet>
+          <title>I Wrote A Paperback Book With Code | Zach Levy's Blog</title>
+          <meta name="description" content="For a side project I wrote and published a 132 page book in 30 hours for free. It's available on Amazon.com." />
+        </Helmet>
         <h2 className="blog-post-title">I Wrote A Paperback Book With Code</h2>
         <p className="blog-post-meta">May 7, 2017 by Zach Levy</p>
         <div className="row">

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
-
 const blogTeasers = [
   (
     <div>
