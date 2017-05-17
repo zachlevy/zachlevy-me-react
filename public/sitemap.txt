@@ -1,4 +1,4 @@
-http://www.zachlevy.me/#/
-http://www.zachlevy.me/#/contact
-http://www.zachlevy.me/#/blog
-http://www.zachlevy.me/#/blog/i-wrote-a-paperback-book-with-code
+http://www.zachlevy.me
+http://www.zachlevy.me/contact
+http://www.zachlevy.me/blog
+http://www.zachlevy.me/blog/i-wrote-a-paperback-book-with-code
