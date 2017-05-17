@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { Helmet } from "react-helmet"
 
 import './App.css'
@@ -19,13 +19,11 @@ class App extends Component {
           <meta name="description" content="Zach Levy's personal website. Entrepreneur, Contract Developer, Coding Bootcamp Mentor. Blog included." />
         </Helmet>
         <Navbar />
-        <HashRouter basename="/">
-          <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={Contact} />
-          </div>
-        </HashRouter>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
+        </div>
         <Footer />
       </div>
     )
