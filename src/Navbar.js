@@ -9,7 +9,7 @@ class Navbar extends Component {
         <div className="container">
           <nav className="nav blog-nav">
             <NavLink className="nav-link" exact to="/">Home</NavLink>
-            <NavLink className="nav-link" to="/blog">Blog</NavLink>
+            <NavLink className="nav-link" to="/blog/">Blog</NavLink>
             <NavLink className="nav-link" to="/contact">Contact</NavLink>
           </nav>
         </div>

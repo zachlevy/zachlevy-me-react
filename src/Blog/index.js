@@ -19,7 +19,7 @@ class Blog extends Component {
         </Helmet>
         <div className="row">
           <div className="col-sm-8">
-            <Route exact path="/blog" component={All} />
+            <Route exact path="/blog/" component={All} />
             <Route path="/blog/i-wrote-a-paperback-book-with-code" component={BookPublishing} />
             <Route path="/blog/example" component={Example} />
           </div>
