@@ -101,7 +101,7 @@ class BookPublishing extends Component {
             <div className="col-12 col-sm-4">
               <div className="row">
                 <div className="col-12">
-                  <iframe style={{width:"120px", height:"240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=zachlevy-20&marketplace=amazon&region=US&placement=152024729X&asins=152024729X&linkId=2fe0f589b2d21fd4bed9971cd6d10c97&show_border=false&link_opens_in_new_window=true&price_color=999999&title_color=0066c0&bg_color=ffffff">
+                  <iframe style={{width:"120px", height:"240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=zachlevy-20&marketplace=amazon&region=US&placement=152024729X&asins=152024729X&linkId=2fe0f589b2d21fd4bed9971cd6d10c97&show_border=false&link_opens_in_new_window=true&price_color=999999&title_color=0066c0&bg_color=ffffff">
                   </iframe>
                 </div>
               </div>
