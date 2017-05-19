@@ -5,7 +5,7 @@ import lifeProTipsCoverImg from '../images/life_pro_tips_book_cover_792x1024.png
 
 const blogTeasers = [
   {
-    url: "/blog/i-wrote-a-paperback-book-with-code",
+    url: "/blog/i-wrote-a-paperback-book-with-code/",
     img: <img src={lifeProTipsCoverImg} className="img-fluid" alt="Life Pro Tips: An Addendum To Life. Book Cover" />,
     description: "A side project of mine where I wrote and published a paperback book available on Amazon.",
     title: "I Wrote A Paperback Book With Code"

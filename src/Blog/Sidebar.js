@@ -20,7 +20,7 @@ class Sidebar extends Component {
           <div className="col-12">
             <h4>Recommended</h4>
             <ul className="">
-              <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code">I Wrote A Paperback Book With Code</NavLink></li>
+              <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code/">I Wrote A Paperback Book With Code</NavLink></li>
             </ul>
           </div>
         </div>
