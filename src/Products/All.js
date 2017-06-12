@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import lifeProTipsPromoImg from '../images/life_pro_tips_book_promo_1200x628.jpg'
+import historeosImg from '../images/historeos_screencap_1200x628.jpg'
+
 
 class All extends Component {
   render() {
@@ -23,6 +25,20 @@ class All extends Component {
             <ul>
               <li><Link to="http://a.co/jjzqlpf" target="_blank">Available at Amazon.com</Link></li>
               <li><Link to="/blog/i-wrote-a-paperback-book-with-code/">Blog post on how I wrote it</Link></li>
+            </ul>
+          </div>
+          <div className="col-12 col-sm-6">
+            <div>
+              <a href="http://historeos.com" target="_blank" >
+                <img src={historeosImg} className="img-fluid" alt="Historeos" />
+              </a>
+            </div>
+            <br />
+            <h4>Historeos</h4>
+            <h5>Famous Battles Map and Timeline</h5>
+            <p>Interactive map and timeline of famous historical battles on YouTube. Zoom around the map and the timeline to get context on </p>
+            <ul>
+              <li><Link to="http://historeos.com" target="_blank">Live at historeos.com</Link></li>
             </ul>
           </div>
         </div>
