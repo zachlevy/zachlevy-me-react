@@ -9,5 +9,5 @@ export function getPsBattleTitle(url) {
 }
 
 export function buildPsBattleUrl(title) {
-  return getPsBattleTitle(`/blog/photoshopbattles/${title}/`)
+  return `/blog/photoshopbattles/${title}/`
 }

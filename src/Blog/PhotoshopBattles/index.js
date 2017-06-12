@@ -18,7 +18,7 @@ class PhotoshopBattles extends Component {
         </Helmet>
         <div className="row">
           <div className="col-12">
-            <Route exact path="/blog/photoshopbattles/" component={All} />
+            <Route exact path="/blog/photoshopbattles/" render={() => <All battles={battles} />} />
             {
               battles.map((battle, index) => {
                 console.log(battle)
