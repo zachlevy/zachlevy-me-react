@@ -25,6 +25,10 @@ class Battle extends Component {
             <br />
             <h2>{battle.uploadTitle}</h2>
             <p><a href={battle.originalUrl} target="_blank">Original Reddit Post</a></p>
+            <div>
+              <img className="img-fluid" src={battle.originalImageUrl} />
+            </div>
+            <br />
           </div>
         </div>
       </div>
