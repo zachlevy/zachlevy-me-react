@@ -14,7 +14,7 @@ class Products extends Component {
           <meta name="description" content="Side Projects, Side Hustles, Hackathons." />
         </Helmet>
         <div className="row">
-          <div className="col-sm-12">
+          <div className="col-12">
             <Route exact path="/products/" component={All} />
           </div>
         </div>

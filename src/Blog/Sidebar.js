@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
 
 class Sidebar extends Component {
+
   render() {
     return (
-      <div className="col-sm-3 offset-sm-1">
+      <div className={this.props.colClass}>
         <div className="row">
           <div className="col-12">
             <div className="sidebar-profile-img-wrap">
