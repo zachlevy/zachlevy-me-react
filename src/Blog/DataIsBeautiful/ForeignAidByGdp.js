@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 
-import { Tooltip, ResponsiveContainer, PieChart, Pie, Legend } from 'recharts'
+import { BarChart, XAxis, YAxis, CartesianGrid, Bar, Tooltip, ResponsiveContainer, PieChart, Pie, Legend } from 'recharts'
 
 import './foreignAid.css'
 
@@ -39,11 +39,23 @@ class ForeignAidByGdp extends Component {
         <div className="row">
           <div className="col-12">
             <h1>Foreign Aid By Country</h1>
+            <h4>Foreign Aid In USD (Billions)</h4>
             <ResponsiveContainer width="100%" height={500}>
               <PieChart>
                 <Tooltip content={tooltip}/>
                 <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={"50%"} cy={"75%"} outerRadius={300} fill="#ffffff" />
               </PieChart>
+            </ResponsiveContainer>
+            <h4>Foreign Aid As A Percentage of GDP</h4>
+            <ResponsiveContainer width="100%" height={500}>
+              <BarChart data={foreignAidPercentageOfGdp} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+                <XAxis dataKey="country"/>
+                <YAxis/>
+                <CartesianGrid strokeDasharray="3 3"/>
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="percentage" fill="#8884d8" />
+              </BarChart>
             </ResponsiveContainer>
             <div>
               <svg>
