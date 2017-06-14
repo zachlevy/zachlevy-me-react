@@ -1,7 +1,7 @@
 [
-  {"country":"United States", "dollars": 31.08, "fill": "url(#bgimg)"},
-  {"country":"United Kingdom", "dollars": 18.70},
-  {"country":"Germany", "dollars": 17.78},
+  {"country":"United States", "dollars": 31.08, "fill": "url(#us-flag)"},
+  {"country":"United Kingdom", "dollars": 18.70, "fill": "url(#gb-flag)"},
+  {"country":"Germany", "dollars": 17.78, "fill": "url(#de-flag)"},
   {"country":"Japan", "dollars": 9.32},
   {"country":"France", "dollars": 9.23},
   {"country":"Sweden", "dollars": 7.09},

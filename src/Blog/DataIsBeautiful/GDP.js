@@ -1,13 +1,21 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 
-import { d3, PieChart, Pie, Legend } from 'recharts'
+import { PieChart, Pie, Legend } from 'recharts'
 
 // import data from './foreignAidGdp.json'
 import foreignAidPercentageOfGdp from './foreignAidPercentageOfGdp.json'
 import foreignAidByCountry from './foreignAidByCountry.json'
 
+const countries = [
+  "gb",
+  "us",
+  "de"
+]
+
 class GDP extends Component {
+
+
   render() {
     console.log("render")
     return (
@@ -24,10 +32,17 @@ class GDP extends Component {
            </PieChart>
            <svg>
              <defs>
-               <pattern id="bgimg" patternUnits="userSpaceOnUse" width="100" height="100">
-                 <image xlinkHref="http://placehold.it/100x100" x="0" y="0" width="100" height="100">
-                 </image>
-               </pattern>
+               {
+                 countries.map((country) => {
+                   return (
+                     <pattern id={`${country}-flag`} patternUnits="userSpaceOnUse" width="600" height="600">
+                       <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="-100" width="600" height="600">
+                       </image>
+                     </pattern>
+                   )
+                 })
+               }
+
              </defs>
            </svg>
           </div>
