@@ -58,7 +58,7 @@ class ForeignAidByGdp extends Component {
                 <CartesianGrid strokeDasharray="3 3"/>
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="percentage" fill="#8884d8" />
+                <Bar dataKey="percentage" fill="#8884d8" stroke="#000000" />
               </BarChart>
             </ResponsiveContainer>
             <div>
