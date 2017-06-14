@@ -7,14 +7,9 @@ import { PieChart, Pie, Legend } from 'recharts'
 import foreignAidPercentageOfGdp from './foreignAidPercentageOfGdp.json'
 import foreignAidByCountry from './foreignAidByCountry.json'
 
-const countries = [
-  "gb",
-  "us",
-  "de"
-]
+const countries = ["us","gb","de","jp","fr","se","nl","ca","no","it","ch","au","dk","kr","be","es","fi","at","ie","pl","nz","lu","pt","gr","cz","sk","si","is"]
 
 class GDP extends Component {
-
 
   render() {
     console.log("render")
@@ -29,22 +24,22 @@ class GDP extends Component {
             <h1>ok</h1>
             <PieChart width={800} height={400}>
               <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={400} cy={300} outerRadius={250} fill="#000000" label/>
-           </PieChart>
-           <svg>
-             <defs>
-               {
-                 countries.map((country) => {
-                   return (
-                     <pattern id={`${country}-flag`} patternUnits="userSpaceOnUse" width="600" height="600">
-                       <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="-100" width="600" height="600">
-                       </image>
-                     </pattern>
-                   )
-                 })
-               }
-
-             </defs>
-           </svg>
+            </PieChart>
+            <svg>
+              <defs>
+                {
+                  countries.map((country, index) => {
+                    const width = "550"
+                    const height = "550"
+                    return (
+                      <pattern key={index} id={`${country}-flag`} patternUnits="userSpaceOnUse" width={width} height={height}>
+                        <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="-100" width={width} height={height}></image>
+                      </pattern>
+                    )
+                  })
+                }
+              </defs>
+            </svg>
           </div>
         </div>
       </div>
