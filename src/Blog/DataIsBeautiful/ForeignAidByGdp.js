@@ -38,8 +38,11 @@ class ForeignAidByGdp extends Component {
         </Helmet>
         <div className="row">
           <div className="col-12">
-            <h1>Foreign Aid By Country</h1>
+            <h2>Foreign Aid By Country</h2>
+            <div><span>2017-06-13</span></div>
+            <br />
             <h4>Foreign Aid In USD (Billions)</h4>
+            <p>Hover over a flag to get absolute dollar values.</p>
             <ResponsiveContainer width="100%" height={500}>
               <PieChart>
                 <Tooltip content={tooltip}/>
@@ -47,6 +50,7 @@ class ForeignAidByGdp extends Component {
               </PieChart>
             </ResponsiveContainer>
             <h4>Foreign Aid As A Percentage of GDP</h4>
+            <p>Hover over a flag to get absolute dollar values.</p>
             <ResponsiveContainer width="100%" height={500}>
               <BarChart data={foreignAidPercentageOfGdp} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
                 <XAxis dataKey="country"/>
@@ -66,6 +70,23 @@ class ForeignAidByGdp extends Component {
                       const height = "500"
                       return (
                         <pattern key={index} id={`${country}-flag`} patternUnits="userSpaceOnUse" width={width} height={height}>
+                          <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="0" width={width} height={height}></image>
+                        </pattern>
+                      )
+                    })
+                  }
+                </defs>
+              </svg>
+            </div>
+            <div>
+              <svg>
+                <defs>
+                  {
+                    countries.map((country, index) => {
+                      const width = 30 * 0.7
+                      const height = 18 * 0.7
+                      return (
+                        <pattern key={index} id={`${country}-flag-sm`} patternUnits="userSpaceOnUse" width={width} height={height}>
                           <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="0" width={width} height={height}></image>
                         </pattern>
                       )
