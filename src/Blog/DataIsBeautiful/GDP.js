@@ -20,7 +20,7 @@ class GDP extends Component {
           <div className="col-12">
             <h1>ok</h1>
             <PieChart width={800} height={400}>
-              <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={400} cy={300} outerRadius={250} fill="url(#bgimg)" label/>
+              <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={400} cy={300} outerRadius={250} fill="#000000" label/>
            </PieChart>
            <svg>
              <defs>

@@ -1,5 +1,5 @@
 [
-  {"country":"United States", "dollars": 31.08},
+  {"country":"United States", "dollars": 31.08, "fill": "url(#bgimg)"},
   {"country":"United Kingdom", "dollars": 18.70},
   {"country":"Germany", "dollars": 17.78},
   {"country":"Japan", "dollars": 9.32},
