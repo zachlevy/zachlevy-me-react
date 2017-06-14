@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom'
 
 import { Helmet } from "react-helmet"
 
-import GDP from './GDP'
+import ForeignAidByGdp from './ForeignAidByGdp'
 
 class DataIsBeautiful extends Component {
 
@@ -16,7 +16,7 @@ class DataIsBeautiful extends Component {
         </Helmet>
         <div className="row">
           <div className="col-12">
-            <Route path="/blog/dataisbeautiful/gdp/" component={GDP} />
+            <Route path="/blog/dataisbeautiful/foreign-aid-by-gdp/" component={ForeignAidByGdp} />
           </div>
         </div>
       </div>

@@ -22,6 +22,7 @@ class Sidebar extends Component {
             <h4>Recommended</h4>
             <ul className="">
               <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code/">I Wrote A Paperback Book With Code</NavLink></li>
+              <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code/">Life Pro Tips: an addendum to life</NavLink></li>
             </ul>
           </div>
         </div>
