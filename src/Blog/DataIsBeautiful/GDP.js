@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 
-import { PieChart, Pie, Legend } from 'recharts'
+import { ResponsiveContainer, PieChart, Pie, Legend } from 'recharts'
 
 // import data from './foreignAidGdp.json'
 import foreignAidPercentageOfGdp from './foreignAidPercentageOfGdp.json'
@@ -22,18 +22,20 @@ class GDP extends Component {
         <div className="row">
           <div className="col-12">
             <h1>ok</h1>
-            <PieChart width={800} height={400}>
-              <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={400} cy={300} outerRadius={250} fill="#000000" label/>
-            </PieChart>
+            <ResponsiveContainer width="100%" height={500}>
+              <PieChart>
+                <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={"50%"} cy={"75%"} outerRadius={300} fill="#000000" label/>
+              </PieChart>
+            </ResponsiveContainer>
             <svg>
               <defs>
                 {
                   countries.map((country, index) => {
-                    const width = "550"
-                    const height = "550"
+                    const width = "700"
+                    const height = "500"
                     return (
                       <pattern key={index} id={`${country}-flag`} patternUnits="userSpaceOnUse" width={width} height={height}>
-                        <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="-100" width={width} height={height}></image>
+                        <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="0" width={width} height={height}></image>
                       </pattern>
                     )
                   })

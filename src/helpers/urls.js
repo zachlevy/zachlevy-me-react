@@ -1,6 +1,6 @@
 // check to see if /blog/photoshopbattles/ is in the url
 export function isPhotoshopBattle() {
-  return !!window.location.href.match(/\/blog\/photoshopbattles\//)
+  return !!window.location.href.match(/\/blog\/photoshopbattles\//) || !!window.location.href.match(/\/blog\/dataisbeautiful\//)
 }
 
 // takes in a reddit url in the format
