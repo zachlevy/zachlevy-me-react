@@ -11,7 +11,7 @@ const blogTeasers = [
     title: "I Wrote A Paperback Book With Code"
   }, {
     url: "/blog/dataisbeautiful/development-aid-by-gdp/",
-    img: <img src={"http://placehold.it/400x300"} className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
+    img: <img src="/images/dataisbeautiful/development_aid_by_country_zach_levy.png" className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
     description: "Beautiful graphs for representing development aid by country.",
     title: "DataIsBeautiful: Development Aid By GDP"
   }
