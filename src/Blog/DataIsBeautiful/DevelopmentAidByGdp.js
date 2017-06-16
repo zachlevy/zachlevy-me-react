@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 
-import { BarChart, XAxis, YAxis, CartesianGrid, Bar, Tooltip, ResponsiveContainer, PieChart, Pie, Legend } from 'recharts'
+import { BarChart, XAxis, YAxis, CartesianGrid, Bar, Tooltip, ResponsiveContainer, PieChart, Pie } from 'recharts'
 
 import './developmentAid.css'
 
@@ -17,9 +17,7 @@ class DevelopmentAidByGdp extends Component {
 
     const developmentAidByCountryToolTip = (tooltipObject) => {
       if (tooltipObject.active) {
-        const content = tooltipObject.content
-        const {name, value} = tooltipObject.payload[0]
-        const {country, dollars, fill} = tooltipObject.payload[0].payload
+        const {country, dollars} = tooltipObject.payload[0].payload
         return (
           <div className="developmentAidPercentageOfGdp-tooltip">
             <div className="country"><span>{country}</span></div>
@@ -31,9 +29,7 @@ class DevelopmentAidByGdp extends Component {
 
     const developmentAidPercentageOfGdpTooltip = (tooltipObject) => {
       if (tooltipObject.active) {
-        const content = tooltipObject.content
-        const {name, value} = tooltipObject.payload[0]
-        const {country, percentage, fill} = tooltipObject.payload[0].payload
+        const {country, percentage} = tooltipObject.payload[0].payload
         return (
           <div className="developmentAidPercentageOfGdp-tooltip">
             <div className="country"><span>{country}</span></div>
@@ -41,17 +37,6 @@ class DevelopmentAidByGdp extends Component {
           </div>
         )
       }
-    }
-
-    const developmentAidByCountryLabel = (labelObject) => {
-      console.log(labelObject)
-      const {country, dollars, fill} = labelObject.payload
-      return (
-        <div className="developmentAidByCountry-label">
-          <div className="country"><span>{fill}</span></div>
-          <div className="percentage"><span>${dollars}B</span></div>
-        </div>
-      )
     }
 
     return (

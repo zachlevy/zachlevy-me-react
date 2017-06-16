@@ -1,9 +1,9 @@
-const template = {
-  originalUrl: "", // reddit url
-  originalImageUrl: "", // absolute url to original image pre-photoshop
-  uploadUrl: "", // filename of uploaded image in public/images/psbattles/ directory
-  uploadTitle: "Snarky Title" // fun snarky title used as comment on reddit
-}
+// {
+//   originalUrl: "", // reddit url
+//   originalImageUrl: "", // absolute url to original image pre-photoshop
+//   uploadUrl: "", // filename of uploaded image in public/images/psbattles/ directory
+//   uploadTitle: "Snarky Title" // fun snarky title used as comment on reddit
+// }
 
 export const battles = [
   {
