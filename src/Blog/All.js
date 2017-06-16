@@ -10,10 +10,10 @@ const blogTeasers = [
     description: "A side project of mine where I wrote and published a paperback book available on Amazon.",
     title: "I Wrote A Paperback Book With Code"
   }, {
-    url: "/blog/dataisbeautiful/foreign-aid-by-gdp/",
-    img: <img src={"http://placehold.it/400x300"} className="img-fluid" alt="DataIsBeautiful Foreign Aid By GDP" />,
-    description: "Beautiful graphs for representing foreign aid by country.",
-    title: "DataIsBeautiful: Foreign Aid By GDP"
+    url: "/blog/dataisbeautiful/development-aid-by-gdp/",
+    img: <img src={"http://placehold.it/400x300"} className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
+    description: "Beautiful graphs for representing development aid by country.",
+    title: "DataIsBeautiful: Development Aid By GDP"
   }
 ]
 

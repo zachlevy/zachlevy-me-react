@@ -3,31 +3,55 @@ import { Helmet } from "react-helmet"
 
 import { BarChart, XAxis, YAxis, CartesianGrid, Bar, Tooltip, ResponsiveContainer, PieChart, Pie, Legend } from 'recharts'
 
-import './foreignAid.css'
+import './developmentAid.css'
 
-import foreignAidPercentageOfGdp from './foreignAidPercentageOfGdp.json'
-import foreignAidByCountry from './foreignAidByCountry.json'
+import developmentAidPercentageOfGdp from './developmentAidPercentageOfGdp.json'
+import developmentAidByCountry from './developmentAidByCountry.json'
 
-const countries = ["us","gb","de","jp","fr","se","nl","ca","no","it","ch","au","dk","kr","be","es","fi","at","ie","pl","nz","lu","pt","gr","cz","sk","si","is"]
+const countries = ["us","gb","de","jp","fr","se","nl","ca","no","it","ch","au","dk","kr","be","es","fi","at","ie","pl","nz","lu","pt","gr","cz","sk","si","is","ae","tr","ru","il","hu","hr","lt","ee","lv","mt"]
 
-class ForeignAidByGdp extends Component {
+class DevelopmentAidByGdp extends Component {
 
   render() {
     console.log("render")
 
-    const tooltip = (tooltipObject) => {
+    const developmentAidByCountryToolTip = (tooltipObject) => {
       if (tooltipObject.active) {
         const content = tooltipObject.content
         const {name, value} = tooltipObject.payload[0]
         const {country, dollars, fill} = tooltipObject.payload[0].payload
         return (
-          <div className="foreignAidPercentageOfGdp-tooltip">
+          <div className="developmentAidPercentageOfGdp-tooltip">
             <div className="country"><span>{country}</span></div>
             <div className="dollars"><span>${dollars} Billion USD</span></div>
           </div>
         )
       }
+    }
 
+    const developmentAidPercentageOfGdpTooltip = (tooltipObject) => {
+      if (tooltipObject.active) {
+        const content = tooltipObject.content
+        const {name, value} = tooltipObject.payload[0]
+        const {country, percentage, fill} = tooltipObject.payload[0].payload
+        return (
+          <div className="developmentAidPercentageOfGdp-tooltip">
+            <div className="country"><span>{country}</span></div>
+            <div className="percentage"><span>{percentage}% of GDP</span></div>
+          </div>
+        )
+      }
+    }
+
+    const developmentAidByCountryLabel = (labelObject) => {
+      console.log(labelObject)
+      const {country, dollars, fill} = labelObject.payload
+      return (
+        <div className="developmentAidByCountry-label">
+          <div className="country"><span>{fill}</span></div>
+          <div className="percentage"><span>${dollars}B</span></div>
+        </div>
+      )
     }
 
     return (
@@ -38,30 +62,29 @@ class ForeignAidByGdp extends Component {
         </Helmet>
         <div className="row">
           <div className="col-12">
-            <h2>Foreign Aid By Country</h2>
-            <div><span>2017-06-13</span></div>
+            <h2>Development Aid By Country</h2>
+            <div><span><em>2017-06-13</em></span></div>
             <br />
-            <h4>Foreign Aid In USD (Billions)</h4>
+            <h4>Development Aid Donors In USD (Billions)</h4>
             <p>Hover over a flag to get absolute dollar values.</p>
             <ResponsiveContainer width="100%" height={500}>
               <PieChart>
-                <Tooltip content={tooltip}/>
-                <Pie dataKey="dollars" startAngle={180} endAngle={0} data={foreignAidByCountry} cx={"50%"} cy={"75%"} outerRadius={300} fill="#ffffff" />
+                <Tooltip content={developmentAidByCountryToolTip}/>
+                <Pie dataKey="dollars" startAngle={180} endAngle={0} data={developmentAidByCountry} cx={"50%"} cy={"75%"} outerRadius={300} fill="#ffffff" />
               </PieChart>
             </ResponsiveContainer>
-            <h4>Foreign Aid As A Percentage of GDP</h4>
-            <p>Hover over a flag to get absolute dollar values.</p>
-            <ResponsiveContainer width="100%" height={500}>
-              <BarChart data={foreignAidPercentageOfGdp} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
-                <XAxis dataKey="country"/>
-                <YAxis/>
+            <h4>Development Aid Donors As A Percentage of GDP</h4>
+            <p>Hover over a bar to get actual percentage.</p>
+            <ResponsiveContainer width="100%" height={1100}>
+              <BarChart barGap={0} barSize={20} layout="vertical" data={developmentAidPercentageOfGdp} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="country" />
                 <CartesianGrid strokeDasharray="3 3"/>
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="percentage" fill="#8884d8" stroke="#000000" />
+                <Tooltip content={developmentAidPercentageOfGdpTooltip} />
+                <Bar unit="%" dataKey="percentage" fill="#8884d8" stroke="#000000" />
               </BarChart>
             </ResponsiveContainer>
-            <div>
+            <div className="preload-flags">
               <svg>
                 <defs>
                   {
@@ -78,13 +101,13 @@ class ForeignAidByGdp extends Component {
                 </defs>
               </svg>
             </div>
-            <div>
+            <div className="preload-flags">
               <svg>
                 <defs>
                   {
                     countries.map((country, index) => {
-                      const width = 30 * 0.7
-                      const height = 18 * 0.7
+                      const height = 6
+                      const width = height * 5 / 3
                       return (
                         <pattern key={index} id={`${country}-flag-sm`} patternUnits="userSpaceOnUse" width={width} height={height}>
                           <image xlinkHref={`/images/countriesFlagsSvgs/${country}.svg`} x="0" y="0" width={width} height={height}></image>
@@ -113,4 +136,4 @@ class ForeignAidByGdp extends Component {
   }
 }
 
-export default ForeignAidByGdp
+export default DevelopmentAidByGdp
