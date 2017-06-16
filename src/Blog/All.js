@@ -9,6 +9,11 @@ const blogTeasers = [
     img: <img src={lifeProTipsCoverImg} className="img-fluid" alt="Life Pro Tips: An Addendum To Life. Book Cover" />,
     description: "A side project of mine where I wrote and published a paperback book available on Amazon.",
     title: "I Wrote A Paperback Book With Code"
+  }, {
+    url: "/blog/dataisbeautiful/development-aid-by-gdp/",
+    img: <img src="/images/dataisbeautiful/development_aid_by_country_zach_levy.png" className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
+    description: "Beautiful graphs for representing development aid by country.",
+    title: "DataIsBeautiful: Development Aid By GDP"
   }
 ]
 
@@ -16,21 +21,24 @@ class All extends Component {
   render() {
     return (
       <div>
-        <h1>All Blog Posts</h1>
+        <h1>Blog Posts</h1>
         <br />
         {
           blogTeasers.map((content, index) => {
             return (
-              <div className="row" key={index}>
-                <div className="col-12 col-sm-2">
-                  <Link to={content.url}>
-                    {content.img}
-                  </Link>
+              <div>
+                <div className="row" key={index}>
+                  <div className="col-12 col-sm-2">
+                    <Link to={content.url}>
+                      {content.img}
+                    </Link>
+                  </div>
+                  <div className="col-12 col-sm-10">
+                    <h4><Link to={content.url}>{content.title}</Link></h4>
+                    <p>{content.description}</p>
+                  </div>
                 </div>
-                <div className="col-12 col-sm-10">
-                  <h4><Link to={content.url}>{content.title}</Link></h4>
-                  <p>{content.description}</p>
-                </div>
+                <br />
               </div>
             )
           })
