@@ -57,8 +57,12 @@ class DevelopmentAidByGdp extends Component {
     return (
       <div>
         <Helmet>
-          <title itemprop="name">PsBattles | Zach Levy's Blog</title>
+          <title itemprop="name">Development Aid By Country | Zach Levy's Blog</title>
           <meta name="description" content="PhotoshopBattles as a fun side project." />
+            <meta property="og:title" content={`Development Aid By Country | Zach Levy's Blog`} />
+            <meta property="og:type" content="image" />
+            <meta property="og:url" content={`${window.location.origin}/blog/dataisbeautiful/development-aid-by-gdp/`} />
+          <meta property="og:image" content={`${window.location.origin}/images/dataisbeautiful/development_aid_by_country_zach_levy.png`} />
         </Helmet>
         <div className="row">
           <div className="col-12">
@@ -120,7 +124,8 @@ class DevelopmentAidByGdp extends Component {
             </div>
             <div>
               <h5>Sources</h5>
-              <p><a href="https://en.wikipedia.org/wiki/List_of_development_aid_country_donors#Net_official_development_assistance_by_country_as_a_percentage_of_gross_national_income_in_2015" target="_blank">https://en.wikipedia.org/wiki/List_of_development_aid_country_donors</a></p>
+              <p>Net official development assistance by country in 2015<a href="https://en.wikipedia.org/wiki/List_of_development_aid_country_donors#Net_official_development_assistance_by_country_in_2015" target="_blank"> Wikipedia</a></p>
+              <p>Net official development assistance by country as a percentage of gross national income in 2015 <a href="https://en.wikipedia.org/wiki/List_of_development_aid_country_donors#Net_official_development_assistance_by_country_as_a_percentage_of_gross_national_income_in_2015" target="_blank"> Wikipedia</a></p>
               <h5>Stack</h5>
               <ul>
                 <li><a href="https://facebook.github.io/react/" target="_blank">React.js</a></li>
