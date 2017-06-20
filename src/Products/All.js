@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 import lifeProTipsPromoImg from '../images/life_pro_tips_book_promo_1200x628.jpg'
 import historeosImg from '../images/historeos_screencap_1200x628.jpg'
+import historeosLogo from '../images/historeos_logo_1200x628.png'
 import physlyImg from '../images/physly_screencap_1200x628.jpg'
+import physlyLogo from '../images/physly_logo_1200x628.png'
 
 
 class All extends Component {
@@ -31,7 +33,7 @@ class All extends Component {
           <div className="col-12 col-sm-6">
             <div>
               <a href="http://historeos.com" target="_blank" >
-                <img src={historeosImg} className="img-fluid" alt="Historeos" />
+                <img src={historeosLogo} className="img-fluid" alt="Historeos" />
               </a>
             </div>
             <br />
@@ -48,7 +50,7 @@ class All extends Component {
           <div className="col-12 col-sm-6">
             <div>
               <a href="https://phys.ly" target="_blank" >
-                <img src={physlyImg} className="img-fluid" alt="Physly" />
+                <img src={physlyLogo} className="img-fluid" alt="Physly" />
               </a>
             </div>
             <br />
