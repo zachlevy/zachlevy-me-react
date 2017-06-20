@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import lifeProTipsPromoImg from '../images/life_pro_tips_book_promo_1200x628.jpg'
 import historeosImg from '../images/historeos_screencap_1200x628.jpg'
+import physlyImg from '../images/physly_screencap_1200x628.jpg'
 
 
 class All extends Component {
@@ -36,9 +37,27 @@ class All extends Component {
             <br />
             <h4>Historeos</h4>
             <h5>Famous Battles Map and Timeline</h5>
-            <p>Interactive map and timeline of famous historical battles on YouTube. Zoom around the map and the timeline to get context on </p>
+            <p>Interactive map and timeline of famous historical battles on YouTube. Zoom around the map and the timeline to get context on battles.</p>
             <ul>
               <li><Link to="http://historeos.com" target="_blank">Live at historeos.com</Link></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-12 col-sm-6">
+            <div>
+              <a href="https://phys.ly" target="_blank" >
+                <img src={physlyImg} className="img-fluid" alt="Physly" />
+              </a>
+            </div>
+            <br />
+            <h4>Physly</h4>
+            <h5>Physical Web URL Shortener</h5>
+            <p>Physly is a url shortener specifically designed for the physical web. This is useful for the hardware limitations of the Bluetooth Eddystone protocol used in beacons for the Physical Web.</p>
+            <ul>
+              <li><Link to="https://phys.ly" target="_blank">Live at phys.ly</Link></li>
+              <li><a href="https://github.com/zachlevy/physly" target="_blank">Physly on GitHub</a></li>
             </ul>
           </div>
         </div>
