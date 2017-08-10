@@ -16,5 +16,10 @@ export const battles = [
     originalImageUrl: "https://i.redditmedia.com/tqLRgyxfrBhIu611ailqBFJa2Pc2njTCXkozDsgcM-A.jpg?w=1024&s=fbabde9586c8b6b4097d0a424494cd21",
     uploadUrl: "jaguar_20170722.jpg",
     uploadTitle: "Driving a Leopard"
+  }, {
+    originalUrl: "https://www.reddit.com/r/photoshopbattles/comments/6sryd5/psbattle_this_reaction_when_he_realize_he_won/",
+    originalImageUrl: "https://i.redd.it/qyrdptqadvez.jpg",
+    uploadUrl: "headcrab_20170810.jpg",
+    uploadTitle: "Gross"
   }
 ]
