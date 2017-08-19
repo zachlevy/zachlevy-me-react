@@ -43,6 +43,7 @@ class SubscriptionForm extends Component {
         // created successfully
         res.json().then((body) => {
           console.log("success!", body)
+          this.setState({subscription: body})
         })
       } else {
         // some other error
@@ -59,6 +60,17 @@ class SubscriptionForm extends Component {
   }
 
   render() {
+    let buttonText = this.props.buttonText
+    let buttonColor = "danger"
+    if (this.state.subscription) {
+      buttonText = (
+        <span>
+          <i className="fa fa-check-circle-o"></i> Subscribed!
+        </span>
+      )
+      buttonColor = "success"
+    }
+
     return (
       <div className="row">
         <div className="col-12 text-center">
@@ -73,14 +85,14 @@ class SubscriptionForm extends Component {
               <ul className="list-unstyled">
                 {
                   this.state.errors.email && this.state.errors.email.map((error, index) => {
-                    return <li key={index}>{error}</li>
+                    return <li key={index}>{"Email " + error}</li>
                   })
                 }
               </ul>
             </div>
           </div>
           <br />
-          <button onClick={this.handleSubmitButton.bind(this)} className="btn btn-danger btn-block">{this.props.buttonText}</button>
+          <button onClick={this.handleSubmitButton.bind(this)} className={`btn btn-${buttonColor} btn-block`}>{buttonText}</button>
         </div>
       </div>
     )
