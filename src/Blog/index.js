@@ -37,11 +37,11 @@ class Blog extends Component {
             <Sidebar colClass={`col-12 col-sm-3 ${isPhotoshopBattle() ? "" : "offset-sm-1"}`} />
           </div>
         </div>
-        <div className="container-fluid stats-block">
+        <div className="container-fluid call-to-action-container">
           <div className="row">
             <div className="col-12 col-sm-8 offset-sm-2">
               <br />
-              <SubscriptionForm callToAction="Want to find out about my latest blog posts?" buttonText="Sure"></SubscriptionForm>
+              <SubscriptionForm callToAction="Want to find out about my latest blog posts?" buttonText="Sure" />
               <br />
             </div>
           </div>

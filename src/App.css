@@ -183,6 +183,30 @@ ul.social-links li.list-inline-item:last-child {
   color: #ffffff;
 }
 
+.call-to-action-container {
+  background-color: #428bca;
+  color: #ffffff;
+}
+
+.call-to-action-container h1,
+.call-to-action-container h2,
+.call-to-action-container h3,
+.call-to-action-container h4 {
+  color: #ffffff;
+}
+
 .sidebar-profile-img-wrap {
   padding: 1em;
+}
+
+.form-error {
+  background-color: #d9534f;
+  color: white;
+  padding: 0.2em 0.5em;;
+  margin-left: 0.5em;
+  margin-top: -1px;
+  text-align: left;
+}
+.form-error ul {
+  margin: 0;
 }

@@ -4,7 +4,7 @@ class SubscriptionForm extends Component {
   constructor() {
     super()
     this.state = {
-
+      errors: {}
     }
   }
 
@@ -27,8 +27,28 @@ class SubscriptionForm extends Component {
           }
         }
       })
+    }).then((res) => {
+      if (res.status === 422) {
+        // validations failed
+        res.json().then((body) => {
+          console.log("errors", body)
+          this.setState({errors: body})
+        })
+      } else if (res.status === 500) {
+        // server down
+        res.json().then(() => {
+          console.log("the server is not responding")
+        })
+      } else if (res.status === 201) {
+        // created successfully
+        res.json().then((body) => {
+          console.log("success!", body)
+        })
+      } else {
+        // some other error
+        console.log("some other error")
+      }
     })
-
   }
 
   handleInputChange(name, e) {
@@ -49,6 +69,15 @@ class SubscriptionForm extends Component {
           </div>
           <div className="form-group">
             <input className="form-control" onKeyUp={this.handleInputChange.bind(this, "email")} type="email" placeholder="example@email.com" />
+            <div className={"col-12 col-sm-6" + (this.state.errors.email ? " form-error" : "")}>
+              <ul className="list-unstyled">
+                {
+                  this.state.errors.email && this.state.errors.email.map((error, index) => {
+                    return <li key={index}>{error}</li>
+                  })
+                }
+              </ul>
+            </div>
           </div>
           <br />
           <button onClick={this.handleSubmitButton.bind(this)} className="btn btn-danger btn-block">{this.props.buttonText}</button>

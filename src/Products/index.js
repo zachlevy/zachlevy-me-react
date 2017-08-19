@@ -22,7 +22,7 @@ class Products extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid stats-block">
+        <div className="container-fluid call-to-action-container">
           <div className="row">
             <div className="col-12 col-sm-8 offset-sm-2">
               <br />
