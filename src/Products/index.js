@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet"
 
 import All from './All'
 
+import SubscriptionForm from '../Subscriptions/Form'
+
 class Products extends Component {
 
   render() {
@@ -17,6 +19,9 @@ class Products extends Component {
           <div className="col-12">
             <Route exact path="/products/" component={All} />
           </div>
+        </div>
+        <div className="row">
+          <SubscriptionForm></SubscriptionForm>
         </div>
       </div>
 
