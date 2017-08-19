@@ -42,14 +42,16 @@ class SubscriptionForm extends Component {
     return (
       <div className="row">
         <div className="col-12 text-center">
+          <h3>{this.props.callToAction}</h3>
+          <p>I send out an email every few months with what I'm up to.</p>
           <div className="form-group">
-            <h3>Want to find out about my latest products?</h3>
-            <p>I send out an email every few months with what I'm up to.</p>
-            <input className="form-control" onKeyUp={this.handleInputChange.bind(this, "email")} type="email" placeholder="example@email.com" />
-            <input className="form-control" onKeyUp={this.handleInputChange.bind(this, "name")} type="text" placeholder="" />
-            <br />
-            <button onClick={this.handleSubmitButton.bind(this)} className="btn btn-primary">Sure</button>
+            <input className="form-control" onKeyUp={this.handleInputChange.bind(this, "name")} type="text" placeholder="Your Name" />
           </div>
+          <div className="form-group">
+            <input className="form-control" onKeyUp={this.handleInputChange.bind(this, "email")} type="email" placeholder="example@email.com" />
+          </div>
+          <br />
+          <button onClick={this.handleSubmitButton.bind(this)} className="btn btn-danger btn-block">{this.props.buttonText}</button>
         </div>
       </div>
     )

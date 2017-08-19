@@ -24,6 +24,10 @@ h6, .h6 {
   color: #333;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 /*
  * Masthead for nav
  */
@@ -172,7 +176,10 @@ ul.social-links li.list-inline-item:last-child {
   padding: 1em 0 0.2em 0;
   margin: 0;
 }
-.stats-block h1 {
+.stats-block h1,
+.stats-block h2,
+.stats-block h3,
+.stats-block h4 {
   color: #ffffff;
 }
 
