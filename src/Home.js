@@ -24,8 +24,8 @@ class Home extends Component {
                 <img src={zachLevyEntrepreneur} className="img-fluid" alt="Future Logo" />
               </div>
               <br />
-              <h4>Entrepreneurship</h4>
-              <p>I've been trying to solve big problems for years in various industries including Advertising, FinTech, Education, and Accessories. I've learned a ton along the way. I am currently looking for another to solve!</p>
+              <h4>Vora Learning</h4>
+              <p>I am the Founder of <a href="http://www.voralearning.com" target="_blank">Vora Learning</a>. Our mission is to find the smartest way to learn.</p>
             </div>
             <div className="col-12 col-sm-4">
               <div>
