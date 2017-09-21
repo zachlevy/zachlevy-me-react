@@ -26,8 +26,8 @@ class All extends Component {
         {
           blogTeasers.map((content, index) => {
             return (
-              <div>
-                <div className="row" key={index}>
+              <div key={index}>
+                <div className="row">
                   <div className="col-12 col-sm-2">
                     <Link to={content.url}>
                       {content.img}

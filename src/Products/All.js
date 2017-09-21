@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import lifeProTipsPromoImg from '../images/life_pro_tips_book_promo_1200x628.jpg'
-import historeosImg from '../images/historeos_screencap_1200x628.jpg'
 import historeosLogo from '../images/historeos_logo_1200x628.png'
-import physlyImg from '../images/physly_screencap_1200x628.jpg'
 import physlyLogo from '../images/physly_logo_1200x628.png'
 
 
