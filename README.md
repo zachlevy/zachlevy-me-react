@@ -13,7 +13,9 @@ Steps for publishing a promotional PhotoshopBattle on Reddit.
 ### DataIsBeautiful
 
 ## Deploy
-Deploy with `npm run deploy`
+Deploy with `npm run deploy` to upload files to S3.
+
+Invalidate on AWS CloudFront manually. Usually takes 10-15 minutes.
 
 ## SEO
 Use Helmet, Schema.org
