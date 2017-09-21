@@ -20,7 +20,7 @@ const jobs = [
     location: "Toronto"
   }, {
     link: "http://bitcine.com/careers/",
-    title: "Various",
+    title: "Various Positions",
     postDate: new Date("2017-09-20"),
     company: "BitCine Technologies",
     contact: "D'Arcy",
@@ -36,16 +36,16 @@ class All extends Component {
       jobsHtml = (
         <div>
           {
-            recentJobs.map((content, index) => {
-              const numDaysAgo = daysAgo(content.postDate)
+            recentJobs.map((job, index) => {
+              const numDaysAgo = daysAgo(job.postDate)
               return (
                 <div key={index}>
                   <div className="row">
                     <div className="col-12">
-                      <a href={content.link} target="_blank">
-                        <h4>{content.title} at {content.company}</h4>
+                      <a href={job.link} target="_blank">
+                        <h4>{job.title} at {job.company} in {job.location}</h4>
                       </a>
-                      <p>Mentioned to me by {content.contact}</p>
+                      <p>Mentioned to me by {job.contact}</p>
                       <p>Posted {numDaysAgo} day{numDaysAgo > 1 ? "s" : ""} ago</p>
                     </div>
                   </div>
