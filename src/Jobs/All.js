@@ -25,6 +25,13 @@ const jobs = [
     company: "BitCine Technologies",
     contact: "D'Arcy",
     location: "Toronto"
+  }, {
+    link: "https://www.lighthouselabs.ca/careers-at-lhl/web-program-lead",
+    title: "Web Program Lead",
+    postDate: new Date("2017-10-02"),
+    company: "Lighthouse Labs",
+    contact: "Kate",
+    location: "Toronto"
   }
 ]
 
