@@ -32,6 +32,13 @@ const jobs = [
     company: "Lighthouse Labs",
     contact: "Kate",
     location: "Toronto"
+  }, {
+    link: "https://jobs.startupnorth.ca/jobs/2661396-software-engineer-at-dash-md",
+    title: "Software Engineer",
+    postDate: new Date("2017-10-04"),
+    company: "Dash MD",
+    contact: "Zack (not me lol)",
+    location: "Toronto"
   }
 ]
 
