@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import lifeProTipsPromoImg from '../images/life_pro_tips_book_promo_1200x628.jpg'
-import historeosLogo from '../images/historeos_logo_1200x628.png'
+import historyMappedLogo from '../images/history_mapped_logo_1200x628.png'
 import physlyLogo from '../images/physly_logo_1200x628.png'
 
 
@@ -30,16 +30,16 @@ class All extends Component {
           </div>
           <div className="col-12 col-sm-6">
             <div>
-              <a href="http://historeos.com" target="_blank" >
-                <img src={historeosLogo} className="img-fluid" alt="Historeos" />
+              <a href="http://www.historymapped.com" target="_blank" >
+                <img src={historyMappedLogo} className="img-fluid" alt="History Mapped" />
               </a>
             </div>
             <br />
-            <h4>Historeos</h4>
+            <h4>History Mapped</h4>
             <h5>Famous Battles Map and Timeline</h5>
             <p>Interactive map and timeline of famous historical battles on YouTube. Zoom around the map and the timeline to get context on battles.</p>
             <ul>
-              <li><Link to="http://historeos.com" target="_blank">Live at historeos.com</Link></li>
+              <li><Link to="http://www.historymapped.com" target="_blank">Live at historymapped.com</Link></li>
             </ul>
           </div>
         </div>
