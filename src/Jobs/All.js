@@ -39,6 +39,13 @@ const jobs = [
     company: "Dash MD",
     contact: "Zack (not me lol)",
     location: "Toronto"
+  }, {
+    link: "https://nise.tech/",
+    title: "Developer for ReactNative",
+    postDate: new Date("2017-10-20"),
+    company: "Nise",
+    contact: "Rayner",
+    location: "Toronto"
   }
 ]
 
