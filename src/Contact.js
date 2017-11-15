@@ -3,11 +3,25 @@ import React, { Component } from 'react'
 import Header from './Header'
 
 import SubscriptionForm from './Subscriptions/Form'
+import zachLevySailing from './images/zach_levy_sailing_512x512.png'
+import { Helmet } from 'react-helmet'
 
 class Contact extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Contact Zach Levy | Entrepreneur and Developer in Toronto, Canada</title>
+          <meta name="description" content="Contact Zach Levy about contract web development or personal side projects" />
+          <meta property="og:title" content="Zach Levy's personal website" />
+          <meta property="og:description" content="Contact Zach Levy about contract web development or personal side projects" />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
+          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+        </Helmet>
         <Header />
         <div className="container">
           <div className="row">

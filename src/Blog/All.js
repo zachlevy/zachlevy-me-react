@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import lifeProTipsCoverImg from '../images/life_pro_tips_book_cover_792x1024.png'
+import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
+import developmentAidByCountryZachLevy from '../images/dataisbeautiful/development_aid_by_country_zach_levy.png'
+import { Helmet } from 'react-helmet'
 
 const blogTeasers = [
   {
@@ -11,7 +14,7 @@ const blogTeasers = [
     title: "I Wrote A Paperback Book With Code"
   }, {
     url: "/blog/dataisbeautiful/development-aid-by-gdp/",
-    img: <img src="/images/dataisbeautiful/development_aid_by_country_zach_levy.png" className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
+    img: <img src={developmentAidByCountryZachLevy} className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
     description: "Beautiful graphs for representing development aid by country.",
     title: "DataIsBeautiful: Development Aid By GDP"
   }
@@ -21,6 +24,18 @@ class All extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Zach Levy's Blog</title>
+          <meta name="description" content="Blog posts about things I make." />
+          <meta property="og:title" content="Zach Levy's Blog" />
+          <meta property="og:description" content="Blog posts about things I make." />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
+          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+        </Helmet>
         <h1>Blog Posts</h1>
         <br />
         {

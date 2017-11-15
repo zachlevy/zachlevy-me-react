@@ -5,11 +5,25 @@ import Header from './Header'
 import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
 import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
 import zachLevyEntrepreneur from './images/zach_levy_entrepreneur_1024x512.png'
+import zachLevySailing from './images/zach_levy_sailing_512x512.png'
+import { Helmet } from "react-helmet"
 
 class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Zach Levy | Entrepreneur and Developer in Toronto, Canada</title>
+          <meta name="description" content="Zach Levy's personal website. Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
+          <meta property="og:title" content="Zach Levy's personal website" />
+          <meta property="og:description" content="Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
+          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+        </Helmet>
         <Header />
         <div className="container">
           <div className="row">

@@ -7,13 +7,13 @@ import './developmentAid.css'
 
 import developmentAidPercentageOfGdp from './developmentAidPercentageOfGdp.json'
 import developmentAidByCountry from './developmentAidByCountry.json'
+import developmentAidByCountryZachLevy from '../../images/dataisbeautiful/development_aid_by_country_zach_levy.png'
 
 const countries = ["us","gb","de","jp","fr","se","nl","ca","no","it","ch","au","dk","kr","be","es","fi","at","ie","pl","nz","lu","pt","gr","cz","sk","si","is","ae","tr","ru","il","hu","hr","lt","ee","lv","mt"]
 
 class DevelopmentAidByGdp extends Component {
 
   render() {
-    console.log("render")
 
     const developmentAidByCountryToolTip = (tooltipObject) => {
       if (tooltipObject.active) {
@@ -42,13 +42,18 @@ class DevelopmentAidByGdp extends Component {
     return (
       <div>
         <Helmet>
-          <title itemprop="name">Development Aid By Country | Zach Levy's Blog</title>
-          <meta name="description" content="PhotoshopBattles as a fun side project." />
-            <meta property="og:title" content={`Development Aid By Country | Zach Levy's Blog`} />
-            <meta property="og:type" content="image" />
-            <meta property="og:url" content={`${window.location.origin}/blog/dataisbeautiful/development-aid-by-gdp/`} />
-          <meta property="og:image" content={`${window.location.origin}/images/dataisbeautiful/development_aid_by_country_zach_levy.png`} />
+          <title>Development Aid By GDP | Zach Levy's Blog</title>
+          <meta name="description" content="Development Aid By GDP" />
+          <meta property="og:title" content="Development Aid By GDP" />
+          <meta property="og:description" content="Development Aid By GDP Graph" />
+          <meta property="og:image" content={process.env.REACT_APP_URL + developmentAidByCountryZachLevy} />
+          <meta property="og:image:width" content="1416" />
+          <meta property="og:image:height" content="972" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
+          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
         </Helmet>
+
         <div className="row">
           <div className="col-12">
             <h2>Development Aid By Country</h2>
