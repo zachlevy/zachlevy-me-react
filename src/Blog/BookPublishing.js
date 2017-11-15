@@ -19,7 +19,7 @@ class BookPublishing extends Component {
           <meta property="og:image:height" content="628" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
-          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+          <meta property="fb:app_id" content={process.env.REACT_APP_FB_APP_ID} />
         </Helmet>
         <h2 className="blog-post-title">I Wrote A Paperback Book With Code</h2>
         <p className="blog-post-meta"><span itemProp="datePublished" content="2017-05-07">May 7, 2017</span> by <span itemProp="author" itemScope itemType="http://schema.org/Person"><span itemProp="name">Zach Levy</span></span></p>

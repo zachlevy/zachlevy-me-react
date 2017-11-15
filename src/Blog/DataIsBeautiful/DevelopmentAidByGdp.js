@@ -51,7 +51,7 @@ class DevelopmentAidByGdp extends Component {
           <meta property="og:image:height" content="972" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
-          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+          <meta property="fb:app_id" content={process.env.REACT_APP_FB_APP_ID} />
         </Helmet>
 
         <div className="row">

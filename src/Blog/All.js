@@ -34,7 +34,7 @@ class All extends Component {
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
-          <meta property="db:appid" content={process.env.REACT_APP_FB_APP_ID} />
+          <meta property="fb:app_id" content={process.env.REACT_APP_FB_APP_ID} />
         </Helmet>
         <h1>Blog Posts</h1>
         <br />
