@@ -6,11 +6,25 @@ import All from './All'
 
 import SubscriptionForm from '../Subscriptions/Form'
 
+import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
+
 class Products extends Component {
 
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Zach Levy's Products | Entrepreneur and Developer in Toronto, Canada</title>
+          <meta name="description" content="Zach Levy's Products and Personal Side Projects" />
+          <meta property="og:title" content="Zach Levy's Products and Personal Side Projects" />
+          <meta property="og:description" content="I have a few products related to history, software development, and The Phyiscal Web" />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={process.env.REACT_APP_URL + this.props.location.pathname} />
+          <meta property="fb:app_id" content={process.env.REACT_APP_FB_APP_ID} />
+        </Helmet>
         <div className="container">
           <Helmet>
             <title>Zach Levy's Products</title>
