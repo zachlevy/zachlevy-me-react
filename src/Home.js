@@ -47,7 +47,7 @@ class Home extends Component {
               </div>
               <br />
               <h4>First Exit Media</h4>
-              <p>I have done a lot of contract work through <a href="http://firstexitmedia.com" target="_blank">First Exit Media</a>. I've helped 15+ entrepreneurs launch new products for their businesses by rapidly building prototypes for web and mobile apps. I've also made a lot of corporate websites.</p>
+              <p>I have done a lot of contract work through First Exit Media. I've helped 15+ entrepreneurs launch new products for their businesses by rapidly building prototypes for web and mobile apps. I've also made a lot of corporate websites.</p>
             </div>
             <div className="col-12 col-sm-4">
               <div>
