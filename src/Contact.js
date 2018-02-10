@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Header from './Header'
 
 import SubscriptionForm from './Subscriptions/Form'
-import zachLevySailing from './images/zach_levy_sailing_512x512.png'
+import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
 import { Helmet } from 'react-helmet'
 
 class Contact extends Component {
@@ -15,7 +15,7 @@ class Contact extends Component {
           <meta name="description" content="Contact Zach Levy about contract web development or personal side projects" />
           <meta property="og:title" content="Zach Levy's personal website" />
           <meta property="og:description" content="Contact Zach Levy about contract web development or personal side projects" />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />

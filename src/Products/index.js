@@ -6,7 +6,7 @@ import All from './All'
 
 import SubscriptionForm from '../Subscriptions/Form'
 
-import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
+import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
 
 class Products extends Component {
 
@@ -18,7 +18,7 @@ class Products extends Component {
           <meta name="description" content="Zach Levy's Products and Personal Side Projects" />
           <meta property="og:title" content="Zach Levy's Products and Personal Side Projects" />
           <meta property="og:description" content="I have a few products related to history, software development, and The Phyiscal Web" />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />

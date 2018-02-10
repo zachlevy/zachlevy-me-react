@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import lifeProTipsCoverImg from '../images/life_pro_tips_book_cover_792x1024.png'
-import zachLevySailing from '../images/zach_levy_sailing_512x512.png'
+import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
 import developmentAidByCountryZachLevy from '../images/dataisbeautiful/development_aid_by_country_zach_levy.png'
 import { Helmet } from 'react-helmet'
 
@@ -29,7 +29,7 @@ class All extends Component {
           <meta name="description" content="Blog posts about things I make." />
           <meta property="og:title" content="Zach Levy's Blog" />
           <meta property="og:description" content="Blog posts about things I make." />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />

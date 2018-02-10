@@ -4,8 +4,8 @@ import Header from './Header'
 
 import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
 import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
-import zachLevyEntrepreneur from './images/zach_levy_entrepreneur_1024x512.png'
-import zachLevySailing from './images/zach_levy_sailing_512x512.png'
+import nitroxLogo from './images/nitrox_logo_1024x512.png'
+import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
 import { Helmet } from "react-helmet"
 
 class Home extends Component {
@@ -13,11 +13,11 @@ class Home extends Component {
     return (
       <div>
         <Helmet>
-          <title>Zach Levy | Entrepreneur and Developer in Toronto, Canada</title>
+          <title>Zach Levy | Entrepreneur, Developer, and Voracious Learner in Toronto, Canada</title>
           <meta name="description" content="Zach Levy's personal website. Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
           <meta property="og:title" content="Zach Levy's personal website" />
           <meta property="og:description" content="Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevySailing} />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />
@@ -35,11 +35,11 @@ class Home extends Component {
           <div className="row">
             <div className="col-12 col-sm-4">
               <div>
-                <img src={zachLevyEntrepreneur} className="img-fluid" alt="Future Logo" />
+                <img src={nitroxLogo} className="img-fluid" alt="Nitrox Logo" />
               </div>
               <br />
-              <h4>Vora Learning</h4>
-              <p>I am the Founder of <a href="http://www.voralearning.com" target="_blank">Vora Learning</a>. Our mission is to find the smartest way to learn.</p>
+              <h4>Nitrox</h4>
+              <p>I am a Co-Founder of <a href="https://nitrox.io" target="_blank">Nitrox</a>. We're improving communication between Remote Workers and their co-workers.</p>
             </div>
             <div className="col-12 col-sm-4">
               <div>
@@ -92,7 +92,7 @@ class Home extends Component {
                 <li>Objective-C</li>
                 <li>Java</li>
               </ul>
-              <p>*Alright, Python is still pretty awesome</p>
+              <p>*Alright, Python is pretty awesome</p>
             </div>
           </div>
         </div>
