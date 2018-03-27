@@ -26,10 +26,6 @@ class Products extends Component {
           <meta property="fb:app_id" content={process.env.REACT_APP_FB_APP_ID} />
         </Helmet>
         <div className="container">
-          <Helmet>
-            <title>Zach Levy's Products</title>
-            <meta name="description" content="Side Projects, Side Hustles, Hackathons." />
-          </Helmet>
           <div className="row">
             <div className="col-12">
               <Route exact path="/products/" component={All} />
