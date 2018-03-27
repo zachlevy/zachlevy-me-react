@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Blog from './Blog'
 import Jobs from './Jobs'
 import Products from './Products'
+import Domains from './Domains'
 import Home from './Home'
 import Contact from './Contact'
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/blog/" component={Blog} />
           <Route path="/jobs/" component={Jobs} />
           <Route path="/products/" component={Products} />
+          <Route path="/domains/" component={Domains} />
           <Route path="/contact/" component={Contact} />
         </div>
         <Footer />
