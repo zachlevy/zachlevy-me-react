@@ -6,6 +6,7 @@ import Sidebar from './Sidebar'
 
 import BookPublishing from './BookPublishing'
 import Example from './Example'
+import LighthouseLabsMentor from './LighthouseLabsMentor'
 import All from './All'
 
 // use a different layout for sidebar if photoshopbatle or not
@@ -33,6 +34,7 @@ class Blog extends Component {
               <Route path="/blog/example/" component={Example} />
               <Route path="/blog/photoshopbattles/" component={PhotoshopBattles} />
               <Route path="/blog/dataisbeautiful/" component={DataIsBeautiful} />
+              <Route path="/blog/lighthouse-labs-mentor/" component={LighthouseLabsMentor} />
             </div>
             <Sidebar colClass={`col-12 col-sm-3 ${isPhotoshopBattle() ? "" : "offset-sm-1"}`} />
           </div>

@@ -23,6 +23,7 @@ class Sidebar extends Component {
             <ul className="">
               <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code/">I Wrote A Paperback Book With Code</NavLink></li>
               <li><NavLink to="/blog/i-wrote-a-paperback-book-with-code/">Life Pro Tips: an addendum to life</NavLink></li>
+              <li><NavLink to="/blog/lighthouse-labs-mentor/">Mentoring Hundreds of Students Programming Students</NavLink></li>
             </ul>
           </div>
         </div>

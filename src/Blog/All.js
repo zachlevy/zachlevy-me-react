@@ -17,6 +17,11 @@ const blogTeasers = [
     img: <img src={developmentAidByCountryZachLevy} className="img-fluid" alt="DataIsBeautiful Development Aid By GDP" />,
     description: "Beautiful graphs for representing development aid by country.",
     title: "DataIsBeautiful: Development Aid By GDP"
+  }, {
+    url: "/blog/lighthouse-labs-mentor/",
+    img: <img src={developmentAidByCountryZachLevy} className="img-fluid" alt="Lightouse Labs Mentor" />,
+    description: "Beautiful graphs for representing development aid by country.",
+    title: "Mentoring Thousands of Programming Students"
   }
 ]
 
