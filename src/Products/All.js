@@ -11,7 +11,7 @@ class All extends Component {
   render() {
     return (
       <div>
-        <h1>All Products</h1>
+        <h1>My Products</h1>
         <p>I love building products, here are my favorites.</p>
         <br />
         <div className="row">
@@ -25,7 +25,7 @@ class All extends Component {
             <br />
             <h4>Nitrox</h4>
             <h5>Remote Worker Tools</h5>
-            <p>We're declaring a Crusade against long meetings and frustrating conference calls! Remote Workers will improve communication with their co-workers, I swear it.</p>
+            <p>Nitrox lets your remote and Work From Home team members feel like they are in the office with the rest of the team. The Nitrox bridge keeps an open audio connection between the office and anyone not at the office.</p>
             <ul>
               <li><Link to="https://nitrox.io" target="_blank">Join the Crusade at nitrox.io</Link></li>
             </ul>
