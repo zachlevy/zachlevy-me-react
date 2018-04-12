@@ -46,6 +46,13 @@ const jobs = [
     company: "Nise",
     contact: "Rayner",
     location: "Toronto"
+  }, {
+    link: "https://nitrox.io/jobs",
+    title: "Business Development - Outbound Sales",
+    postDate: new Date("2018-04-12"),
+    company: "Nitrox",
+    contact: "Zach",
+    location: "Toronto"
   }
 ]
 
