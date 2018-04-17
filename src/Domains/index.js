@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
 import { Helmet } from "react-helmet"
 
 import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'

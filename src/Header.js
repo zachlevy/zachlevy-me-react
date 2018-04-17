@@ -1,8 +1,18 @@
 import React, { Component } from 'react'
 
+import { testimonials } from './Testimonials/testimonials'
+import { shuffleArray } from './helpers/math'
+
+import Testimonials from './Testimonials'
+
 import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
 
 class Header extends Component {
+  shuffledTestimonials = []
+  constructor(props) {
+    super(props)
+    this.shuffledTestimonials = shuffleArray(testimonials)
+  }
   render() {
     return (
       <div className="container">
@@ -10,10 +20,16 @@ class Header extends Component {
           <div className="col-12 col-sm-2">
             <img src={zachLevyDrinking} className="img-fluid rounded-circle" alt="Zach Levy Sailing" />
           </div>
-          <div className="col-12 col-sm-10">
+          <div className="col-12 col-sm-4">
             <h1>Zach Levy</h1>
             <p>Entrepreneur and Developer in Toronto, Canada</p>
           </div>
+          <div className="col-12 col-sm-6">
+            <div className="col-12">
+              <Testimonials slides={this.shuffledTestimonials} height={"135px"} width={"450px"} />
+            </div>
+          </div>
+        <hr />
         </div>
         <hr />
       </div>
