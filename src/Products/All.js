@@ -27,7 +27,7 @@ class All extends Component {
             <h5>Remote Worker Tools</h5>
             <p>Nitrox lets your remote and Work From Home team members feel like they are in the office with the rest of the team. The Nitrox bridge keeps an open audio connection between the office and anyone not at the office.</p>
             <ul>
-              <li><Link to="https://nitrox.io" target="_blank">Join the Crusade at nitrox.io</Link></li>
+              <li><Link to="https://nitrox.io" target="_blank">Connect at nitrox.io</Link></li>
             </ul>
           </div>
           <div className="col-12 col-sm-6">
