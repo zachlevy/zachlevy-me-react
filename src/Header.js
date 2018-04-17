@@ -20,13 +20,13 @@ class Header extends Component {
           <div className="col-12 col-sm-2">
             <img src={zachLevyDrinking} className="img-fluid rounded-circle" alt="Zach Levy Sailing" />
           </div>
-          <div className="col-12 col-sm-4">
+          <div className="col-12 col-sm-5">
             <h1>Zach Levy</h1>
             <p>Entrepreneur and Developer in Toronto, Canada</p>
           </div>
-          <div className="col-12 col-sm-6">
+          <div className="col-12 col-sm-5">
             <div className="col-12">
-              <Testimonials slides={this.shuffledTestimonials} height={"135px"} width={"450px"} />
+              <Testimonials slides={this.shuffledTestimonials} height={"200px"} width={"320px"} />
             </div>
           </div>
         <hr />

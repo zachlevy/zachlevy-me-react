@@ -14,7 +14,7 @@ class Testimonials extends Component {
             )
           })
         }
-        <ul style={{height: this.props.height || "300px", width: this.props.width || "400px"}}>
+        <ul style={{height: this.props.height || "300px", width: this.props.width || "320px"}}>
           {
             slides.map((slide, index) => {
               return <li key={index}>{slide}</li>
