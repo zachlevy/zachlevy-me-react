@@ -76,7 +76,7 @@ class All extends Component {
             <p>Interactive map and timeline of hugely famous historical battles on YouTube. Zoom around the map and the timeline to get context on the most interesting ancient battles.</p>
             <ul>
               <li><Link to="http://www.historymapped.com" target="_blank">Live at historymapped.com</Link></li>
-              <li><a href="https://github.com/zachlevy/history-videos" target="_blank">History Mapped on GitHub</a></li>
+              <li><a href="https://github.com/zachlevy/history-mapped" target="_blank">History Mapped on GitHub</a></li>
             </ul>
           </div>
         </div>
