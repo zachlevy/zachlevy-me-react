@@ -93,7 +93,6 @@ class All extends Component {
             <h5>Physical Web URL Shortener</h5>
             <p>Physly is a url shortener specifically designed for the physical web. This is useful for the hardware limitations of the Bluetooth Eddystone protocol used in beacons for the Physical Web.</p>
             <ul>
-              <!-- <li><Link to="https://phys.ly" target="_blank">Live at phys.ly</Link></li> -->
               <li><a href="https://github.com/zachlevy/physly" target="_blank">Physly on GitHub</a></li>
             </ul>
           </div>
