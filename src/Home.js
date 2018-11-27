@@ -4,7 +4,7 @@ import Header from './Header'
 
 import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
 import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
-import nitroxLogo from './images/nitrox_logo_1024x512.png'
+import biteKioskLogo from './images/bite_kiosk_logo_1024x512.png'
 import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
 import { Helmet } from "react-helmet"
 
@@ -35,11 +35,11 @@ class Home extends Component {
           <div className="row">
             <div className="col-12 col-sm-4">
               <div>
-                <img src={nitroxLogo} className="img-fluid" alt="Nitrox Logo" />
+                <img src={biteKioskLogo} className="img-fluid" alt="Bite Kiosk Logo" />
               </div>
               <br />
-              <h4>Nitrox</h4>
-              <p>I am a Co-Founder of <a href="https://nitrox.io" target="_blank">Nitrox</a>. We're improving communication between Remote Workers and their co-workers.</p>
+              <h4>Bite Kiosk</h4>
+              <p>I am building self-service kiosks at <a href="https://bitekiosk.com" target="_blank">Bite</a>! Less waiting, more eating.</p>
             </div>
             <div className="col-12 col-sm-4">
               <div>
@@ -71,6 +71,7 @@ class Home extends Component {
               <ul>
                 <li>Ruby on Rails</li>
                 <li>React</li>
+                <li>Node.js</li>
               </ul>
               <p>Other than that, anything that solves the problem</p>
             </div>
@@ -92,7 +93,7 @@ class Home extends Component {
                 <li>Objective-C</li>
                 <li>Java</li>
               </ul>
-              <p>*Alright, Python is pretty awesome</p>
+              <p>* jk, Python is awesome</p>
             </div>
           </div>
         </div>
