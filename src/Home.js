@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Header from './Header'
 
-import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
+// import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
 import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
 import biteKioskLogo from './images/bite_kiosk_logo_1024x512.png'
 import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
