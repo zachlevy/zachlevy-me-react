@@ -57,5 +57,10 @@ export const testimonials = [
       <blockquote className="blockquote">"Zach was very knowledgeable and patient in guiding us"</blockquote>
       <p><em>- Student</em> at Lighthouse Labs</p>
     </div>
+  ), (
+    <div>
+      <blockquote className="blockquote">"thank you for leaving good comments and documentation everywhere"</blockquote>
+      <p><em>- Co-worker</em> at Bite</p>
+    </div>
   )
 ]
