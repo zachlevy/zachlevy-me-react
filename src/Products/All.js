@@ -15,21 +15,42 @@ class All extends Component {
         <p>I love building products, here are my favorites.</p>
         <br />
         <div className="row">
-
           <div className="col-12 col-sm-6">
             <div>
-              <a href="https://nitrox.io" target="_blank" >
-                <img src={nitroxLogo} className="img-fluid" alt="Nitrox" />
+              <a href="http://www.historymapped.com" target="_blank" >
+                <img src={historyMappedLogo} className="img-fluid" alt="History Mapped" />
               </a>
             </div>
             <br />
-            <h4>Nitrox</h4>
-            <h5>Remote Worker Tools</h5>
-            <p>Nitrox lets your remote and Work From Home team members feel like they are in the office with the rest of the team. The Nitrox bridge keeps an open audio connection between the office and anyone not at the office.</p>
+            <h4>History Mapped</h4>
+            <h5>Famous Battles Map and Timeline</h5>
+            <p>Interactive map and timeline of hugely famous historical battles on YouTube. Zoom around the map and the timeline to get context on the most interesting ancient battles.</p>
             <ul>
-              <li><Link to="https://nitrox.io" target="_blank">Connect at nitrox.io</Link></li>
+              <li><Link to="http://www.historymapped.com" target="_blank">Live at historymapped.com</Link></li>
+              <li><a href="https://github.com/zachlevy/history-mapped" target="_blank">History Mapped on GitHub</a></li>
+              <li><a href="https://reddit.com/r/history/comments/7chvkp/visualizing_famous_greek_roman_and_medieval/" target="_blank">History Mapped on Reddit</a></li>
+              <li><a href="https://reddit.com/r/ancientrome/comments/7chhnm/visualizing_ancient_roman_battles_on_a_map_and/" target="_blank">History Mapped on Reddit again</a></li>
             </ul>
           </div>
+          <div className="col-12 col-sm-6" itemScope itemType="http://schema.org/Product">
+            <div>
+              <a href="http://a.co/jjzqlpf" target="_blank" >
+                <img itemProp="image" src={lifeProTipsPromoImg} className="img-fluid" alt="Life Pro Tips: An Addendum To Life. Book Promo" />
+              </a>
+            </div>
+            <br />
+            <h4 itemProp="name">Life Pro Tips: an addendum to life</h4>
+            <p itemProp="description">Life Hacks and Pro Tips for life. Improve your life and the lives of those around you in this modern perspective in various aspects of you life including: Social, Career & Work, General, Entertainment.</p>
+            <p itemProp="offers" itemScope itemType="http://schema.org/Offer"><span itemProp="price">$11.99 USD</span></p>
+            <ul>
+              <li><Link to="http://a.co/jjzqlpf" target="_blank">Available at Amazon.com</Link></li>
+              <li><Link to="https://www.amazon.ca/Life-Pro-Tips-addendum-life/dp/152024729X/" target="_blank">Available at Amazon.ca</Link></li>
+              <li><Link to="/blog/i-wrote-a-paperback-book-with-code/">Blog post on how I wrote it</Link></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
           <div className="col-12 col-sm-6">
             <div>
               <a href="http://absurdhistory.com" target="_blank" >
@@ -46,42 +67,6 @@ class All extends Component {
               <li><Link to="https://play.google.com/music/listen#/ps/I6jhbk4iibgzmhfmd3zkq2ydsp4" target="_blank">Listen on Google Play</Link></li>
             </ul>
           </div>
-        </div>
-        <hr />
-        <div className="row">
-          <div className="col-12 col-sm-6" itemScope itemType="http://schema.org/Product">
-            <div>
-              <a href="http://a.co/jjzqlpf" target="_blank" >
-                <img itemProp="image" src={lifeProTipsPromoImg} className="img-fluid" alt="Life Pro Tips: An Addendum To Life. Book Promo" />
-              </a>
-            </div>
-            <br />
-            <h4 itemProp="name">Life Pro Tips: an addendum to life</h4>
-            <p itemProp="description">Life Hacks and Pro Tips for life. Improve your life and the lives of those around you in this modern perspective in various aspects of you life including: Social, Career & Work, General, Entertainment.</p>
-            <p itemProp="offers" itemScope itemType="http://schema.org/Offer"><span itemProp="price">$11.99 USD</span></p>
-            <ul>
-              <li><Link to="http://a.co/jjzqlpf" target="_blank">Available at Amazon.com</Link></li>
-              <li><Link to="/blog/i-wrote-a-paperback-book-with-code/">Blog post on how I wrote it</Link></li>
-            </ul>
-          </div>
-          <div className="col-12 col-sm-6">
-            <div>
-              <a href="http://www.historymapped.com" target="_blank" >
-                <img src={historyMappedLogo} className="img-fluid" alt="History Mapped" />
-              </a>
-            </div>
-            <br />
-            <h4>History Mapped</h4>
-            <h5>Famous Battles Map and Timeline</h5>
-            <p>Interactive map and timeline of hugely famous historical battles on YouTube. Zoom around the map and the timeline to get context on the most interesting ancient battles.</p>
-            <ul>
-              <li><Link to="http://www.historymapped.com" target="_blank">Live at historymapped.com</Link></li>
-              <li><a href="https://github.com/zachlevy/history-mapped" target="_blank">History Mapped on GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <div className="row">
           <div className="col-12 col-sm-6">
             <div>
               <a href="https://github.com/zachlevy/physly" target="_blank" >
@@ -94,7 +79,20 @@ class All extends Component {
             <p>Physly is a url shortener specifically designed for the physical web. This is useful for the hardware limitations of the Bluetooth Eddystone protocol used in beacons for the Physical Web.</p>
             <ul>
               <li><a href="https://github.com/zachlevy/physly" target="_blank">Physly on GitHub</a></li>
+              <li><a href="https://www.producthunt.com/posts/physly" target="_blank">Physly on ProductHunt</a></li>
             </ul>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-12 col-sm-6">
+            <div>
+              <img src={nitroxLogo} className="img-fluid" alt="Nitrox" />
+            </div>
+            <br />
+            <h4>Nitrox</h4>
+            <h5>Remote Worker Tools</h5>
+            <p>Nitrox lets your remote and Work From Home team members feel like they are in the office with the rest of the team. The Nitrox bridge keeps an open audio connection between the office and anyone not at the office.</p>
           </div>
         </div>
       </div>
