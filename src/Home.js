@@ -33,7 +33,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-sm-4">
+            <div className="col-12 col-sm-6">
               <div>
                 <img src={biteKioskLogo} className="img-fluid" alt="Bite Kiosk Logo" />
               </div>
@@ -41,7 +41,7 @@ class Home extends Component {
               <h4>Bite Kiosk</h4>
               <p>I am building self-service kiosks at <a href="https://bitekiosk.com" target="_blank">Bite</a>! Less waiting, more eating.</p>
             </div>
-            <div className="col-12 col-sm-4">
+            <div className="col-12 col-sm-6">
               <div>
                 <img src={firstExitMediaLogo} className="img-fluid" alt="First Exit Media Logo" />
               </div>
@@ -49,6 +49,7 @@ class Home extends Component {
               <h4>First Exit Media</h4>
               <p>I have done a lot of contract work through First Exit Media. I've helped 15+ entrepreneurs launch new products for their businesses by rapidly building prototypes for web and mobile apps. I've also made a lot of corporate websites.</p>
             </div>
+            {/*
             <div className="col-12 col-sm-4">
               <div>
                 <img src={lighthouseLabsLogo} className="img-fluid" alt="Lighthouse Labs Logo" />
@@ -57,6 +58,7 @@ class Home extends Component {
               <h4>Lighthouse Labs</h4>
               <p>I answer questions from students in the <a href="https://lighthouselabs.ca/web-bootcamp" target="_blank">Web Bootcamp</a>. Questions range from debugging tough environment issues to architecture decisions about their web apps. I've been mentoring at Lighthouse since July 2015 and it's been great!</p>
             </div>
+            */}
           </div>
           <hr />
           <div className="row">
@@ -69,9 +71,9 @@ class Home extends Component {
             <div className="col-12 col-sm-4">
               <h4>Favorite Stack</h4>
               <ul>
-                <li>Ruby on Rails</li>
-                <li>React</li>
                 <li>Node.js</li>
+                <li>React</li>
+                <li>Ruby on Rails</li>
               </ul>
               <p>Other than that, anything that solves the problem</p>
             </div>
@@ -80,7 +82,7 @@ class Home extends Component {
               <ul>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
-                <li>Trello</li>
+                <li>Github</li>
               </ul>
             </div>
             <div className="col-12 col-sm-4">
