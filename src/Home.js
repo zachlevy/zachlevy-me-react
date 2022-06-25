@@ -3,9 +3,10 @@ import React, { Component } from 'react'
 import Header from './Header'
 
 // import lighthouseLabsLogo from './images/lighthouse_labs_logo_1024x512.png'
-import firstExitMediaLogo from './images/first_exit_media_logo_1024x512.png'
-import biteKioskLogo from './images/bite_kiosk_logo_1024x512.png'
-import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
+import givelaunchLogo from './images/givelaunch_logo_1024x512.png'
+import apiBuffLogo from './images/api_buff_logo_1024x512.png'
+// import zachLevyDrinking from './images/zach_levy_drinking_512x512.png'
+import zachLevyEntrepreneur from './images/zach_levy_20220313_x512.png'
 import { Helmet } from "react-helmet"
 
 class Home extends Component {
@@ -14,10 +15,10 @@ class Home extends Component {
       <div>
         <Helmet>
           <title>Zach Levy | Entrepreneur, Developer, and Voracious Learner in Toronto, Canada</title>
-          <meta name="description" content="Zach Levy's personal website. Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
-          <meta property="og:title" content="Zach Levy's personal website" />
-          <meta property="og:description" content="Entrepreneur, Contract Developer, Voracious Learner, Coding Bootcamp Mentor." />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
+          <meta name="description" content="Zach Levy. Full Stack Developer, Voracious Learner, Entrepreneur." />
+          <meta property="og:title" content="Zach Levy" />
+          <meta property="og:description" content="Entrepreneur, Contract Developer, Voracious Learner." />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyEntrepreneur} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />
@@ -35,30 +36,20 @@ class Home extends Component {
           <div className="row">
             <div className="col-12 col-sm-6">
               <div>
-                <img src={biteKioskLogo} className="img-fluid" alt="Bite Kiosk Logo" />
+                <img src={apiBuffLogo} className="img-fluid" alt="API Buff Logo" />
               </div>
               <br />
-              <h4>Bite Kiosk</h4>
-              <p>I am building self-service kiosks at <a href="https://bitekiosk.com" target="_blank">Bite</a>! Less waiting, more eating.</p>
+              <h4>API Buff</h4>
+              <p>We're making it enjoyable to work with outdated APIs at <a href="https://apibuff.com" target="_blank">API Buff</a>.</p>
             </div>
             <div className="col-12 col-sm-6">
               <div>
-                <img src={firstExitMediaLogo} className="img-fluid" alt="First Exit Media Logo" />
+                <img src={givelaunchLogo} className="img-fluid" alt="Givelaunch Logo" />
               </div>
               <br />
-              <h4>First Exit Media</h4>
-              <p>I have done a lot of contract work through First Exit Media. I've helped 15+ entrepreneurs launch new products for their businesses by rapidly building prototypes for web and mobile apps. I've also made a lot of corporate websites.</p>
+              <h4>Givelaunch</h4>
+              <p>We're bringing the data revolution to non-profits at <a href="https://givelaunch.com" target="_blank">Givelaunch</a>.</p>
             </div>
-            {/*
-            <div className="col-12 col-sm-4">
-              <div>
-                <img src={lighthouseLabsLogo} className="img-fluid" alt="Lighthouse Labs Logo" />
-              </div>
-              <br />
-              <h4>Lighthouse Labs</h4>
-              <p>I answer questions from students in the <a href="https://lighthouselabs.ca/web-bootcamp" target="_blank">Web Bootcamp</a>. Questions range from debugging tough environment issues to architecture decisions about their web apps. I've been mentoring at Lighthouse since July 2015 and it's been great!</p>
-            </div>
-            */}
           </div>
           <hr />
           <div className="row">
@@ -72,17 +63,17 @@ class Home extends Component {
               <h4>Favorite Stack</h4>
               <ul>
                 <li>Node.js</li>
-                <li>React</li>
-                <li>Ruby on Rails</li>
+                <li>Reactjs</li>
+                <li>MongoDB</li>
               </ul>
               <p>Other than that, anything that solves the problem</p>
             </div>
             <div className="col-12 col-sm-4">
               <h4>Other Tools</h4>
               <ul>
+                <li>Ruby on Rails</li>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
-                <li>Github</li>
               </ul>
             </div>
             <div className="col-12 col-sm-4">
@@ -94,6 +85,7 @@ class Home extends Component {
                 <li>ES5 / CoffeeScript / Angular1</li>
                 <li>Objective-C</li>
                 <li>Java</li>
+                <li>Postgres</li>
               </ul>
               <p>* jk, Python is awesome</p>
             </div>
