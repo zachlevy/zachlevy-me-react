@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
+// import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
+import zachLevyEntrepreneur from '../images/zach_levy_20220313_x512.png'
 
 class Sidebar extends Component {
 
@@ -11,7 +12,7 @@ class Sidebar extends Component {
         <div className="row">
           <div className="col-12">
             <div className="sidebar-profile-img-wrap">
-              <img src={zachLevyDrinking} className="img-fluid rounded-circle" alt="Zach Levy Sailing" />
+              <img src={zachLevyEntrepreneur} className="img-fluid rounded-circle" alt="Zach Levy Sailing" />
             </div>
             <h1>Zach Levy</h1>
             <p>Entrepreneur and Developer in Toronto, Canada</p>

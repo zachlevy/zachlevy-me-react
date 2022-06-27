@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 
-import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
+// import zachLevyDrinking from '../images/zach_levy_drinking_512x512.png'
+import zachLevyEntrepreneur from '../images/zach_levy_20220313_x512.png'
 
 class Domains extends Component {
 
@@ -27,7 +28,7 @@ class Domains extends Component {
           <meta name="description" content="Zach Levy's Domains For Sale" />
           <meta property="og:title" content="Zach Levy's Domains For Sale" />
           <meta property="og:description" content="I have a few domains for sale. Feel free to message me to buy." />
-          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyDrinking} />
+          <meta property="og:image" content={process.env.REACT_APP_URL + zachLevyEntrepreneur} />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
           <meta property="og:type" content="website" />
