@@ -62,5 +62,11 @@ export const testimonials = [
       <blockquote className="blockquote">"thank you for leaving good comments and documentation everywhere"</blockquote>
       <p><em>- Co-worker</em> at Bite</p>
     </div>
+  ), (
+    <div>
+      <blockquote className="blockquote">"Thank you! #cultureleader"</blockquote>
+      <p><em>- Co-worker</em> at Bite</p>
+    </div>
   )
+  // Testimonials.css needs to be updated after adding a testimonial
 ]

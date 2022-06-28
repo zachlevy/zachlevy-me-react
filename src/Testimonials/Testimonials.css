@@ -11,6 +11,15 @@
 .csslider > input {
   display: none;
 }
+.csslider > input:nth-of-type(13):checked ~ ul li:first-of-type {
+  margin-left: -1200%;
+}
+.csslider > input:nth-of-type(12):checked ~ ul li:first-of-type {
+  margin-left: -1100%;
+}
+.csslider > input:nth-of-type(11):checked ~ ul li:first-of-type {
+  margin-left: -1000%;
+}
 .csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
   margin-left: -900%;
 }
@@ -155,7 +164,9 @@
 .csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
 .csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
 .csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
-.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after,
+.csslider > input:nth-of-type(12):checked ~ .navigation label:nth-of-type(12):after,
+.csslider > input:nth-of-type(13):checked ~ .navigation label:nth-of-type(13):after {
   opacity: 1;
 }
 .csslider > .arrows {
@@ -205,7 +216,9 @@
 .csslider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(7),
 .csslider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(8),
 .csslider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(9),
-.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(10) {
+.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(10),
+.csslider > input:nth-of-type(12):checked ~ .arrows label:nth-of-type(11),
+.csslider > input:nth-of-type(13):checked ~ .arrows label:nth-of-type(12) {
   display: block;
   left: 0;
   -moz-transform: rotate(45deg);
@@ -225,7 +238,8 @@
 .csslider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(9),
 .csslider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(10),
 .csslider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(11),
-.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(12) {
+.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(12),
+.csslider > input:nth-of-type(12):checked ~ .arrows label:nth-of-type(13) {
   display: block;
   right: 0;
   -moz-transform: rotate(225deg);
